@@ -7,7 +7,7 @@ const Cart = ({ onClose }) => {
     <>
       <div className="modal">
       <div className="modal-content">
-        <span className="close" onClick={onClose}>&times;</span>
+        <span className="close" onClick={onClose}></span>
         <p>Contenido de la pestaña superpuesta...</p>
       </div>
     </div>

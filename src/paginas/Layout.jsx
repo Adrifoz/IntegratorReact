@@ -12,13 +12,13 @@ function Layout() {
 
     // const changeClass = Cart(changeClass);
     const [cartOpen, setCartOpen] = useState(false);
-    const modified = () => {
-        
+    const modifield = () => {
+        if (cartOpen == false) {
         setCartOpen(true);
-      };
-     const efault = () => {
+      } else {
         setCartOpen(false);
-      };
+      }}
+   
     
   return (
     <>
@@ -38,8 +38,8 @@ function Layout() {
                 </li>
                 <li>
                     {/* <button className="navLink" onClick={<Cart/>}>Carrito</button> */}
-                    <Link className="navLink" onClick={modified}>Carrito</Link>
-                    {cartOpen && <Cart onClose={efault} />}
+                    <Link className="navLink" onClick={modifield}>Carrito</Link>
+                    {cartOpen && <Cart />}
                 </li>
                 
                 <ul className="Login">
