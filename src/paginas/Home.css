@@ -1,0 +1,35 @@
+
+.homeContainer {
+display: flex;
+flex-direction: column;
+padding-top: 130px;
+gap: 25px;
+padding-right: 300px;
+}
+
+
+.home {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cardsContainer {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+    gap: 10px;
+}
+    
+h1 {
+    padding-left: 60px;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+}
+    
+  

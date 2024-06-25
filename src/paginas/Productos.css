@@ -1,0 +1,62 @@
+.ProductosHome {
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.Productos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.Card {
+    
+    border-radius: 8px;
+    width: 200px;
+    height: 250px;
+    padding-top: 10px;
+    background-color: aquamarine;
+}
+
+.CardA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.CardB {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: small;
+}
+
+/* JUSTIFY-CONTENT INDEPENDIENTE PARA MEJOR MANEJO DE ETIQUETAS Y PÁRRAFOS */
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    font-size: medium;
+    padding-bottom: 6px;
+}
+
+.Precio {
+    display: flex;
+    flex-direction: row-reverse ;
+    padding-right: 10px;
+    padding-top: 7px;
+}
+
+img {
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid #c4c5d2;
+    border-radius: 8px;
+    width: 180px;
+    height: 160px;
+}

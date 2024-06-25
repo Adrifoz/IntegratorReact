@@ -1,8 +1,9 @@
 import React from 'react'
+import './NoPage.css'
 
 function NoPage() {
   return (
-    <div>
+    <div className='NoPage'>
         <h1>Página inexistente</h1>
     </div>
   )
