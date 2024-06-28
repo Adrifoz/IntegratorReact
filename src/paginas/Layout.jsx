@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import { Outlet, Link } from "react-router-dom";
 import Cart from "./Cart";
@@ -51,31 +50,11 @@ function Layout() {
                         <Link className="navLink" to="SignUp">Registrate</Link>
                     </li>
                 </ul>
-=======
-import { Outlet, Link } from "react-router-dom"
-
-
-function Layout() {
-  return (
-    <>
-        <nav>
-            <ul>
-                <li>
-                    <link to="/">Home</link>
-                </li>
-                <li>
-                    <link to="Productos">Home</link>
-                </li>
->>>>>>> c19bbac0e85abd9c54160c11bb21738f3fa50e90
             </ul>
         </nav>
         <Outlet/>
     </>
-<<<<<<< HEAD
   );
-=======
-  )
->>>>>>> c19bbac0e85abd9c54160c11bb21738f3fa50e90
 }
 
 export default Layout

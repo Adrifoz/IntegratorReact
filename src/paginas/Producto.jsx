@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 
 const Producto = ({nombre,imagen,precio}) => {
@@ -22,17 +21,3 @@ const Producto = ({nombre,imagen,precio}) => {
 }
 
 export default Producto
-=======
-
-
-function Producto({nombre,precio}) {
-  return (
-    <div>
-        <h2>{nombre}</h2>
-        <h3>{precio}</h3>
-    </div>
-  )
-}
-
-export default Producto
->>>>>>> c19bbac0e85abd9c54160c11bb21738f3fa50e90
