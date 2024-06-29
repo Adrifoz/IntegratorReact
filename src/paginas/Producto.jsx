@@ -13,6 +13,7 @@ const Producto = ({nombre,imagen,precio}) => {
     <div className="CardB">
 
         <p className="Precio">Precio: {precio}</p>
+        <button onClick={() => addToCart(product)}>Add to Cart</button>
     </div>
 
   </div>
