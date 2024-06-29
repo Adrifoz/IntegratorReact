@@ -6,6 +6,9 @@ import NoPage from './paginas/NoPage';
 import Productos from './paginas/Productos';
 import Cart from "./paginas/Cart";
 import Login from "./paginas/Login";
+import SignUp from "./paginas/SignUp";
+import AboutUs from "./paginas/AboutUs";
+import Contacto from "./paginas/Contacto";
 
 
 function App() {
@@ -16,10 +19,10 @@ function App() {
                 <Route index element={<Home/>} />
                 <Route path='Productos' element={<Productos/>} />
                 <Route path='Cart' element={<Cart/>} />
-                {/* <Route path='SobreNosotros' element={<SobreNosotros/>} />
-                <Route path='Contacto' element={<Contacto/>} /> */}
+                <Route path='AboutUs' element={<AboutUs/>} />
+                <Route path='Contacto' element={<Contacto/>} />
                 <Route path='Login' element={<Login/>} />
-                {/* <Route path='SignIn' element={<SignIn/>} /> */}
+                <Route path='SignUp' element={<SignUp/>} />
                 <Route path='*' element={<NoPage/>} />
             </Route>
         </Routes>

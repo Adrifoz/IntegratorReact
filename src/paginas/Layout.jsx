@@ -3,14 +3,12 @@ import { Outlet, Link } from "react-router-dom";
 import Cart from "./Cart";
 import { useState } from "react";
 import './Layout.css'
-// import toggleMenu from "./toggleMenu";
 
 
 
 
 function Layout() {
 
-    // const changeClass = Cart(changeClass);
     const [cartOpen, setCartOpen] = useState(false);
     const modifield = () => {
         if (cartOpen == false) {
@@ -37,7 +35,6 @@ function Layout() {
                     <Link className="navLink" to="Contacto">Contacto</Link>
                 </li>
                 <li>
-                    {/* <button className="navLink" onClick={<Cart/>}>Carrito</button> */}
                     <Link className="navLink" onClick={modifield}>Carrito</Link>
                     {cartOpen && <Cart />}
                 </li>

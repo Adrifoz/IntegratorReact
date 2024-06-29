@@ -1,0 +1,14 @@
+.SignUpContainer {
+    padding-top: 170px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.SignUp {
+    display: flex;
+    width: 150px;
+    height: 18px;
+    gap: 30px;
+    flex-direction: column;
+}
