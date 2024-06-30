@@ -1,9 +1,9 @@
 
 import React from 'react';
-import {cartItems} from '../addToCart';
+import addToCart from '../addToCart';
 import './Cart.css'
 
-const Cart = () => {
+const Cart = (cart) => {
   return ( 
     <>
       <div className="modal">
@@ -11,18 +11,19 @@ const Cart = () => {
     
       <h2>Cart</h2>
       <ul>
-        {cartItems.map((item) => (
+        {console.log(cart)}
+        {/* {existingItem.map((item) => (
           <li key={item.id}>
             {item.name} - ${item.price} x {item.quantity}
-            <button onClick={() => removeFromCart(item.id)}>Remove</button>
+           
           </li>
-        ))}
+        ))} */}
       </ul>
       <h3>
         Total: $
-        {cartItems.reduce((total, item) => total + item.price * item.quantity, 0)}
+        {/* {cartItems.reduce((total, item) => total + item.price * item.quantity, 0)} */}
       </h3>
-      
+    
       </div>
       </div>
     </>
