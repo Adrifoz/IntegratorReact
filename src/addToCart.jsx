@@ -1,24 +1,28 @@
-import React, { useState } from 'react';
+import { addItemToCart } from './paginas/elementsCart';
+import { createSlice } from '@reduxjs/toolkit';
 
-
-
-const addToCart = (productos) => {
-    const [cart, setCart] = useState([]);
-   
-
-  const existingItem = cart.find((item) => item.id === productos.id);
-  if (existingItem) {
-    setCart(
-      cart.map((item) =>
-        item.id === productos.id
-          ? { ...item, quantity: item.quantity + 1 }
-          : item
-      )
-    );
-  } else {
-    setCart([...cart, {  quantity: 1 }]);
-  }
-
+const INITIAL_STATE = {
+  cartItems: [],
+  shippingCost: 0,
+  hidden: true,
 };
 
-export default addToCart;
+const cartSlice = createSlice({
+  name: 'cart',
+  initialState: INITIAL_STATE,
+  reducers: {
+    addToCart: (state, action) => {
+      return {
+        ...state,
+        cartItems: addItemToCart(state.cartItems, action.payload),
+        shippingCost: SHIPPING_COST,
+      };
+    },
+  }
+  });
+
+  // export const { addToCart, removeFromCart, clearCart, toggleHiddenCart } =
+  export const { addToCart } =
+  cartSlice.actions;
+
+export default cartSlice.reducer;
