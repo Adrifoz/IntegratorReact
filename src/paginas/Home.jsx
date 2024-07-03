@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './cssDocs/Home.css';
 import FuncionProductos from './FuncionProductos';
 import { Link } from "react-router-dom";
 

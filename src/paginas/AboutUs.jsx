@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutUs.css'
+import './cssDocs/AboutUs.css'
 
 function AboutUs () {
 return ( 

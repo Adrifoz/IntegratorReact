@@ -1,5 +1,5 @@
 import React from 'react';
-import './SignUp.css'
+import './cssDocs/SignUp.css'
 
 function SignUp () {
 return ( 

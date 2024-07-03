@@ -1,8 +1,8 @@
 
 import { Outlet, Link } from "react-router-dom";
-import Cart from "./Cart";
+import Cart from "../CartRedux/Cart";
 import { useState } from "react";
-import './Layout.css'
+import './cssDocs/Layout.css'
 
 
 

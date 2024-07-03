@@ -1,7 +1,7 @@
 import React from 'react';
 import { productos } from "../productos.js";
 import Producto from "./Producto.jsx";
-import './Productos.css';
+import './cssDocs/Productos.css';
 
 function Productos() {
   return (

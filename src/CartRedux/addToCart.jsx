@@ -1,4 +1,4 @@
-import { addItemToCart } from './paginas/elementsCart';
+import { addItemToCart } from './elementsCart';
 import { createSlice } from '@reduxjs/toolkit';
 
 const INITIAL_STATE = {

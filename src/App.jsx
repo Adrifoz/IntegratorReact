@@ -4,11 +4,12 @@ import Home from './paginas/Home';
 import Layout from './paginas/Layout';
 import NoPage from './paginas/NoPage';
 import Productos from './paginas/Productos';
-import Cart from "./paginas/Cart";
+import Cart from "./CartRedux/Cart";
 import Login from "./paginas/Login";
 import SignUp from "./paginas/SignUp";
 import AboutUs from "./paginas/AboutUs";
 import Contacto from "./paginas/Contacto";
+import ProductList from "./CartRedux/ProductList";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                 <Route index element={<Home/>} />
                 <Route path='Productos' element={<Productos/>} />
                 <Route path='Cart' element={<Cart/>} />
+                <Route path='Cart' element={<ProductList />} />
                 <Route path='AboutUs' element={<AboutUs/>} />
                 <Route path='Contacto' element={<Contacto/>} />
                 <Route path='Login' element={<Login/>} />
