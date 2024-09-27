@@ -2,7 +2,7 @@
 import { Outlet, Link } from "react-router-dom";
 import Cart from "./Cart";
 import { useState } from "react";
-import './Layout.css'
+import '../CSS/Layout.css'
 
 
 

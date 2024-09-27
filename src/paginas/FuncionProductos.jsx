@@ -1,6 +1,6 @@
 import Producto from "./Producto";
 import { destacados } from "../destacados";
-import "./Productos.css";
+import "../CSS/Productos.css";
 
 const FuncionProductos = () => {
     return (

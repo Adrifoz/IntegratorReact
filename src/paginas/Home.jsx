@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import '../CSS/Home.css';
 import FuncionProductos from './FuncionProductos';
 import { Link } from "react-router-dom";
 
@@ -30,6 +30,11 @@ function Home () {
       </div>
   <div class="footer">
     <h3>Plomería y Gas Necochea ©copyright</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci atque aliquid numquam suscipit, eligendi voluptatum ratione deleniti repellat, ex delectus! Possimus, maxime blanditiis voluptates non magni ipsam quos esse.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur dignissimos veritatis itaque nihil enim, optio cumque a similique, nemo dolor, corporis mollitia saepe quod quos? Commodi delectus quia ad.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eius illum nostrum soluta odio aliquid quae quas nemo facere voluptas eveniet mollitia aut iure nobis magni ab odit, nam id.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fuga odio doloribus commodi impedit vel nostrum suscipit recusandae expedita, dicta maxime cupiditate quos, sequi blanditiis natus ipsa? Mollitia, exercitationem impedit.
+    </p>
 
     
   </div>

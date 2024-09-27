@@ -1,14 +1,17 @@
-
 import React from 'react';
-import './Cart.css'
+import '../CSS/Cart.css';
+import { useSelector } from 'react-redux';
 
 const Cart = ({ onClose }) => {
+const quantity = useSelector((state) => state.quantity)
+
   return ( 
     <>
-      <div className="modal">
-      <div className="modal-content">
+      <div className="contentCart">
+      <div className="cart">
         <span className="close" onClick={onClose}></span>
-        <p>Contenido de la pestaña superpuesta...</p>
+        <h3>Contenido de la pestaña superpuesta...</h3>
+        <p>{quantity}</p>
       </div>
     </div>
     </>
