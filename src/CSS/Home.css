@@ -5,6 +5,7 @@ flex-direction: column;
 padding-top: 130px;
 gap: 25px;
 padding-right: 300px;
+padding-left: 20px;
 }
 
 
@@ -12,7 +13,6 @@ padding-right: 300px;
     
     display: flex;
     flex-direction: column;
-    
 }
 
 .cardsContainer {

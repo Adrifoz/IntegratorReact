@@ -1,8 +1,8 @@
 
-import { Outlet, Link } from "react-router-dom";
-import Cart from "./Cart";
-import { useState } from "react";
-import '../CSS/Layout.css'
+import { Outlet, Link } from 'react-router-dom';
+import Cart from './Cart';
+import { useState } from 'react';
+import '../CSS/Layout.css';
 
 
 
@@ -21,30 +21,30 @@ function Layout() {
   return (
     <>
         <nav>
-            <ul id="NavContainer">
+            <ul id='NavContainer'>
                 <li>
-                    <Link className="navLink" to="/">Home</Link>
+                    <Link className='navLink' to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link className="navLink" to="Productos">Productos</Link>
+                    <Link className='navLink' to='Productos'>Productos</Link>
                 </li>
                 <li>
-                    <Link className="navLink" to="AboutUs">Sobre Nosotros</Link>
+                    <Link className='navLink' to='AboutUs'>Sobre Nosotros</Link>
                 </li>
                 <li>
-                    <Link className="navLink" to="Contacto">Contacto</Link>
+                    <Link className='navLink' to='Contacto'>Contacto</Link>
                 </li>
                 <li>
-                    <Link className="navLink" onClick={modifield}>Carrito</Link>
+                    <Link className='navLink' onClick={modifield}>Carrito</Link>
                     {cartOpen && <Cart />}
                 </li>
                 
-                <ul className="Login">
+                <ul className='Login'>
                     <li>
-                        <Link className="navLink" to="Login">Iniciá Sesión</Link>
+                        <Link className='navLink' to='Login'>Iniciá Sesión</Link>
                     </li>
                     <li>
-                        <Link className="navLink" to="SignUp">Registrate</Link>
+                        <Link className='navLink' to='SignUp'>Registrate</Link>
                     </li>
                 </ul>
             </ul>

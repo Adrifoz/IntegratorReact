@@ -6,13 +6,13 @@ return (
 <>
 <div className='loginContainer'>
 <div className='login'>
-<label for="name">Username:</label>
+<label htmlFor="name">Username:</label>
 <input type="name"/>
 
-<label for="username">Password:</label>
+<label htmlFor="username">Password:</label>
 <input type="password"/>
 <div id="lower">
-    <input type="checkbox"/><label class="check" for="checkbox">Keep me logged in</label>
+    <input type="checkbox"/><label className="check" htmlFor="checkbox">Keep me logged in</label>
     <input type="submit" value="Login"/>
     
 </div>

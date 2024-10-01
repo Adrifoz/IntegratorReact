@@ -6,12 +6,12 @@ return (
 <>
 <div className='SignUpContainer'>
 <div className='SignUp'>
-<label for="name">Username:</label>
+<label htmlFor="name">Username:</label>
 <input type="name"/>
 
-<label for="username">Password:</label>
+<label htmlFor="username">Password:</label>
 <input type="password"/>
-<label for="username">Repeat your password:</label>
+<label htmlFor="username">Repeat your password:</label>
 <input type="password"/>
 <div id="lower">
     

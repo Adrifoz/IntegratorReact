@@ -28,7 +28,7 @@ function Home () {
 
          
       </div>
-  <div class="footer">
+  <div className="footer">
     <h3>Plomería y Gas Necochea ©copyright</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, adipisci atque aliquid numquam suscipit, eligendi voluptatum ratione deleniti repellat, ex delectus! Possimus, maxime blanditiis voluptates non magni ipsam quos esse.
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur dignissimos veritatis itaque nihil enim, optio cumque a similique, nemo dolor, corporis mollitia saepe quod quos? Commodi delectus quia ad.
