@@ -4,14 +4,24 @@ import { useSelector } from 'react-redux';
 
 const Cart = ({ onClose }) => {
 const quantity = useSelector((state) => state.quantity)
+const produc = useSelector((state) => state.cartItems)
 
   return ( 
     <>
       <div className="contentCart">
       <div className="cart">
         <span className="close" onClick={onClose}></span>
-        <h3>Contenido de la pestaña superpuesta...</h3>
-        <p>{quantity}</p>
+        <h3>Contenido del carrito:</h3>
+          <div className="produc">
+            {produc.map((item, index) => (
+              <div key={index}>
+                <h4>{item.nombre}</h4>
+                <p>Precio: ${item.precio}</p>
+                <p>Cantidad: {item.quantity}</p>
+              </div>
+            ))}
+          </div>
+          <p>Total de productos: {quantity}</p>
       </div>
     </div>
     </>
