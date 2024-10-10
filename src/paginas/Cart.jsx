@@ -2,10 +2,12 @@ import React from 'react';
 import '../CSS/Cart.css';
 import { useSelector } from 'react-redux';
 import { reset } from '../ReduxToolkit/cartSlice';
+import { useDispatch } from 'react-redux';
 
 const Cart = ({ onClose }) => {
 const quantity = useSelector((state) => state.quantity)
 const produc = useSelector((state) => state.cartItems)
+const dispatch = useDispatch();
 
   return ( 
     <>
