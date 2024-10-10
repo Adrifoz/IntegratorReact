@@ -16,7 +16,7 @@ const Producto = ({id, nombre, imagen, precio}) => {
 
     <div className="CardB">
 
-        <p className="Precio">Precio: {precio}</p>
+        <p className="Precio">Precio: ${precio}</p>
         <button onClick={() => dispatch(addToCart({id, nombre, imagen, precio}))}>Comprar</button>
     </div>
 

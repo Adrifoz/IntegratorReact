@@ -1,6 +1,7 @@
 import React from 'react';
 import '../CSS/Cart.css';
 import { useSelector } from 'react-redux';
+import { reset } from '../ReduxToolkit/cartSlice';
 
 const Cart = ({ onClose }) => {
 const quantity = useSelector((state) => state.quantity)
@@ -14,14 +15,15 @@ const produc = useSelector((state) => state.cartItems)
         <h3>Contenido del carrito:</h3>
           <div className="produc">
             {produc.map((item, index) => (
-              <div key={index}>
+              <div className='cardProduct' key={index}>
                 <h4>{item.nombre}</h4>
                 <p>Precio: ${item.precio}</p>
                 <p>Cantidad: {item.quantity}</p>
               </div>
             ))}
           </div>
-          <p>Total de productos: {quantity}</p>
+          <p className='totalCart'>Total de productos: {quantity}</p>
+          <button onClick={() => dispatch(reset())}>Limpiar</button>
       </div>
     </div>
     </>
