@@ -1,13 +1,13 @@
 import Producto from "./Producto";
-import { destacados } from "../destacados";
+import { productos } from "../productos";
 import "../CSS/Productos.css";
 
 const FuncionProductos = () => {
+    let prodDest = productos.filter((prod) => prod.destacado == true);
+
     return (
         <div className='cardsContainer'>
-            {destacados.map((prod)=>(
-                <Producto key={prod.id} {...prod} />
-            ))}
+            {prodDest.map((prod) => <Producto key={prod.id} {...prod} />)}
         </div>
     )
 };

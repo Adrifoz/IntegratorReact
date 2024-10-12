@@ -1,25 +1,54 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addToCartUtil } from "./cartUtils";
 
 const initialState= {
     cartItems: JSON.parse(localStorage.getItem('cartItems')) || [],
-    quantity: 0
+    quantity: parseInt(localStorage.getItem('quantity')) || 0,
+    total: parseInt(localStorage.getItem('total')) || 0,
 };
 
 export const cartSlice= createSlice({
     name: "cart",
     initialState: initialState,
     reducers: {
-        addToCart: (state, action) => {
-            state.cartItems.push(action.payload);
-            localStorage.setItem('cartItems', JSON.stringify(state.cartItems));  // Guardar en localStorage
+        addToCart(state, action) {
+            const existingItem = state.cartItems.find(item => item.id === action.payload.id);
+            if (existingItem) {
+              existingItem.cantidad += 1; // Incrementa la cantidad si ya existe
+            } else {
+              state.cartItems.push({ ...action.payload, cantidad: 1 }); // Agregar nuevo con cantidad 1
+            }
+            state.quantity += 1;
+            state.total += action.payload.precio;
+            localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
+            localStorage.setItem('quantity', JSON.stringify(state.quantity));
+            localStorage.setItem('total', JSON.stringify(state.total));
           },
         reset: (state) => {
             state.cartItems = [];
-            localStorage.setItem('cartItems', JSON.stringify([]));  // Limpiar localStorage
+            state.quantity = 0;
+            state.total = 0;
+            localStorage.setItem('cartItems', JSON.stringify([]));
+            localStorage.setItem('quantity', JSON.stringify(0));
+            localStorage.setItem('total', JSON.stringify(0));
+        },
+      
+        removeToCart(state, action) {
+          const existingItem = state.cartItems.find(item => item.id === action.payload.id);
+          if (existingItem) {
+              if (existingItem.cantidad > 1) {
+                  existingItem.cantidad -= 1; // Decrementar cantidad si es mayor a 1
+              } else {
+                  state.cartItems = state.cartItems.filter(item => item.id !== action.payload.id); // Eliminar si la cantidad es 1
+              }
+              state.quantity -= 1;
+              state.total -= existingItem.precio;
+              localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
+              localStorage.setItem('quantity', JSON.stringify(state.quantity));
+              localStorage.setItem('total', JSON.stringify(state.total));
+          }
         }
     }
 })
 
-export const {addToCart, reset} = cartSlice.actions;
+export const {addToCart, reset, removeToCart} = cartSlice.actions;
 export default cartSlice.reducer;
