@@ -16,6 +16,16 @@
     height: 250px;
     padding-top: 10px;
     background-color: aquamarine;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+}
+
+.Card:hover {
+ 
+        background-color: #b6c5d4; /* Color azul */
+        transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+      & img{
+        border: solid #a5a7c9;
+      }
 }
 
 .CardA{
@@ -27,7 +37,7 @@
 
 .CardB {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     font-size: small;
 }
 
@@ -38,17 +48,19 @@ h2 {
     justify-content: center;
 }
 
-h3 {
+.titleCard {
     display: flex;
-    font-size: medium;
     padding-bottom: 6px;
+    font-size: 18px;
+    color: #0a5cad;
+    margin-bottom: 10px;
 }
 
 .Precio {
-    display: flex;
-    flex-direction: row-reverse ;
-    padding-right: 10px;
-    padding-top: 7px;
+    padding: 7px;
+    font-size: 15px;
+    color: #125c99; 
+    
 }
 
 img {
@@ -60,3 +72,21 @@ img {
     width: 180px;
     height: 160px;
 }
+/* Estilo base del botón */
+button {
+    background-color: #00bfff; /* Color celeste */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+  }
+  
+  /* Estilo del botón al pasar el mouse (hover) */
+  button:hover {
+    background-color: #b2cd8b; /* Color azul */
+    transform: scale(1.03); /* Aumenta ligeramente el tamaño */
+    border-radius: 2px;
+  }
+  

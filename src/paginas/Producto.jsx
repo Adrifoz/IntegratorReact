@@ -10,7 +10,7 @@ const Producto = ({id, nombre, imagen, precio}) => {
   <div className="Card">
 
     <div className="CardA">
-        <h3>{nombre}</h3>
+        <h3 className="titleCard">{nombre}</h3>
         <img src={imagen} alt={nombre}/> 
     </div>
 
