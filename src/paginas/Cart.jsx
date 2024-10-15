@@ -16,20 +16,20 @@ const dispatch = useDispatch();
       <div className="contentCart">
       <div className="cart">
         <span className="close" onClick={onClose}></span>
-        <h3>Contenido del carrito:</h3>
+        <h3 className='titleCart'>Contenido del carrito:</h3>
           <div className="produc">
             {produc.map((item, index) => (
               <div className='cardProduct' key={index}>
-                <h4>{item.nombre}</h4>
+                <h4 className='titleProdCart'>{item.nombre}</h4>
                 <p>Precio: ${item.precio}</p>
                 <p>Cantidad: {item.cantidad}</p>
-                <button onClick={() => dispatch(removeToCart({ id: item.id, precio: item.precio }))}>Remover</button>
+                <button className='buttonCart' onClick={() => dispatch(removeToCart({ id: item.id, precio: item.precio }))}>Remover</button>
               </div>
             ))}
           </div>
           <p className='totalCart'>Total: ${total}</p>
           <p className='totalProd'>Cantidad de productos: {quantity}</p>
-          <button onClick={() => dispatch(reset())}>Limpiar</button>
+          <button className='buttonCart' onClick={() => dispatch(reset())}>Limpiar</button>
       </div>
     </div>
     </>

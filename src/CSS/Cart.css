@@ -1,75 +1,11 @@
-/* 
 
-.cart {
-    margin-top: 80px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 99;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 30px;
-  
-    width: 450px;
-    height: calc(100vh - 4rem);
-  
-    padding: 2rem;
-    background-color: var(--gray-bg);
-    border-radius: 0 0 0 1rem;
-    box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);}
- */
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.default{
-  display: flex;
-  flex-direction: row-reverse;
-  position: fixed;
-  top: 80px;
-  right: 0px;
-  width: 250px;
-  height: 100%;
-  background-color: #333;
-  transition: transform 0.3s ease;
-  transform: translateX(0);
-  }
-  
-  .modified{
-   
-    display: flex;
-    flex-direction: row-reverse;
-    position: fixed;
-    top: 80px;
-    right: 0px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    transition: transform 0.3s ease;
-    transform: translateX(+200%);
-    
-  } */
-
-  /* styles.css */
 .cart {
 position: fixed;
-  left: 81.5vw;
+  left: 82%;
   top: 0px;
-  width: 35vh;
+  width: 16%;
   box-shadow: 5px 4px 20px black;
-  background-color: #007BFF; /* Azul */
+  background-color: #5394da; /* Azul */
   color: white;
   /* border: none; */
   padding: 10px 20px;
@@ -80,6 +16,10 @@ position: fixed;
   overflow-y: auto;
 }
 
+.titleCart{
+  padding: 10px;
+}
+
   .cardProduct{
     padding-top: 10px;
     border: outset 2px rgb(78, 76, 155);
@@ -87,41 +27,26 @@ position: fixed;
     padding: 5px;
     background-color: rgb(61, 61, 141);
   }
-
-
-
+  .titleProdCart{
+    padding: 4px;
+  }
 
 .totalCart {
   padding-top: 20px;
+  font-weight: bolder;
 }
-
-
-/* 
-.modal-content {
-  display: flex;
-  flex-direction: row-reverse;
-  position: fixed;
-  top: 80px;
-  right: 0px;
-  width: 250px;
-  height: 100%;
-  background-color: #333;
-  transition: transform 0.3s ease;
-  transform: translateX(0);
-    
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+.totalProd{
+  color: #0d0640;
   font-weight: bold;
-  cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
+ .buttonCart{
+  background-color: #0d0640; /* Color celeste */
+  color: rgb(205, 203, 211);
+  border: none;
+  padding: 4px 3px;
+  font-size: 10px;
+  width: 60px;
   cursor: pointer;
-} */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+}

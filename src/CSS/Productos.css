@@ -73,7 +73,7 @@ img {
     height: 160px;
 }
 /* Estilo base del botón */
-button {
+.Card button {
     background-color: #00bfff; /* Color celeste */
     color: white;
     border: none;
@@ -84,9 +84,11 @@ button {
   }
   
   /* Estilo del botón al pasar el mouse (hover) */
-  button:hover {
+  .Card button:hover {
     background-color: #b2cd8b; /* Color azul */
     transform: scale(1.03); /* Aumenta ligeramente el tamaño */
     border-radius: 2px;
   }
+
+  
   
