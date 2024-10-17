@@ -1,12 +1,17 @@
 .ProductosHome {
+    display: flex;
+    flex-direction: column;
     padding-top: 120px;
     padding-bottom: 30px;
+    gap: 50px;
+    align-items: center;
 }
 
 .Productos {
     display: flex;
     gap: 30px;
     justify-content: center;
+    padding-bottom: 70px;
 }
 
 .Card {
@@ -46,6 +51,11 @@
 h2 {
     display: flex;
     justify-content: center;
+}
+
+p {
+padding-bottom: 20px; 
+font-weight: 600;
 }
 
 .titleCard {

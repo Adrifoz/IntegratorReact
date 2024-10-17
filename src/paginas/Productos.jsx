@@ -10,12 +10,17 @@ function Productos() {
 
       <div className="ProductosHome">
           <h2>Artículos de Plomería/Fontanería</h2>
-      </div>
+     
 
       <div className="Productos">
           {productos.map((prod)=>(
               <Producto key={prod.id} {...prod} />
           ))}
+      </div>
+
+      <p>Todos los productos están sujetos a disponibilidad de stock.</p>
+      <p>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
+
       </div>
 
   </>

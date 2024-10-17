@@ -3,6 +3,9 @@
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .login {
@@ -11,4 +14,8 @@
     height: 18px;
     gap: 30px;
     flex-direction: column;
+}
+
+footer{
+    margin-top: 400px;
 }
