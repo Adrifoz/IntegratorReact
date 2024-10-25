@@ -36,12 +36,10 @@ const [selectedCategory, setSelectedCategory] = useState('');
             </div>
 
         </div>
-
        
             <p className='description'>Todos los productos están sujetos a disponibilidad de stock.</p>
             <p className='description'>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
         
-
         <footer>
         <p>Plomería y Gas Necochea ©copyright</p>
         </footer>
