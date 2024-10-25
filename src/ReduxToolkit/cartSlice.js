@@ -32,7 +32,7 @@ export const cartSlice= createSlice({
             localStorage.setItem('total', JSON.stringify(0));
         },
       
-        removeToCart(state, action) {
+        restToQuantity(state, action) {
           const existingItem = state.cartItems.find(item => item.id === action.payload.id);
           if (existingItem) {
               if (existingItem.cantidad > 1) {
@@ -46,9 +46,35 @@ export const cartSlice= createSlice({
               localStorage.setItem('quantity', JSON.stringify(state.quantity));
               localStorage.setItem('total', JSON.stringify(state.total));
           }
+        },
+
+        addToQuantity(state, action){
+          const existingItem = state.cartItems.find(item => item.id === action.payload.id);
+          if (existingItem) {
+            existingItem.cantidad += 1; // Incrementa la cantidad si ya existe
+          } else {
+            state.cartItems.push({ ...action.payload, cantidad: 1 }); // Agregar nuevo con cantidad 1
+          }
+          state.quantity += 1;
+          state.total += action.payload.precio;
+          localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
+          localStorage.setItem('quantity', JSON.stringify(state.quantity));
+          localStorage.setItem('total', JSON.stringify(state.total));
+        },
+
+        removeToCart(state, action) {
+          const existingItem = state.cartItems.find(item => item.id === action.payload.id);
+            if (existingItem) {
+                state.cartItems = state.cartItems.filter(item => item.id !== action.payload.id); // Eliminar el item completo
+                state.quantity -= existingItem.cantidad; // Restar la cantidad total del item eliminado
+                state.total -= existingItem.precio * existingItem.cantidad; // Restar el precio total del item eliminado
+                localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
+                localStorage.setItem('quantity', JSON.stringify(state.quantity));
+                localStorage.setItem('total', JSON.stringify(state.total));
+            }
         }
     }
 })
 
-export const {addToCart, reset, removeToCart} = cartSlice.actions;
+export const {addToCart, reset, restToQuantity, addToQuantity, removeToCart} = cartSlice.actions;
 export default cartSlice.reducer;

@@ -73,3 +73,16 @@ position: fixed;
   transform: scale(1.06); /* Aumenta ligeramente el tamaño */
   border-radius: 6px;
 }
+
+.quantity{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.quantity button{
+  height: 15px;
+  width: 15px;
+  margin: 1px;
+}

@@ -5,7 +5,8 @@ export const productos= [
         imagen: "src/assets/canilladelavatorio.webp",
         precio: 25000,
         destacado: true,
-        cantidad: 1
+        cantidad: 1,
+        categoria: "mesada"
     },
     {
         id: 1,
@@ -13,7 +14,8 @@ export const productos= [
         imagen: "src/assets/canillademesada.webp",
         precio: 40000,
         destacado: false,
-        cantidad: 1
+        cantidad: 1,
+        categoria: "mesada"
     },
     {
         id: 2,
@@ -21,7 +23,8 @@ export const productos= [
         imagen: "src/assets/canilladepared.png",
         precio: 35000,
         destacado: true,
-        cantidad: 1
+        cantidad: 1,
+        categoria: "pared"
     },
     {
         id: 3,
@@ -29,6 +32,7 @@ export const productos= [
         imagen: "src/assets/llavedepaso.jpg",
         precio: 7000,
         destacado: false,
-        cantidad: 1
+        cantidad: 1,
+        categoria: "pared"
     },
 ]

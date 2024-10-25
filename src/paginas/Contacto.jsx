@@ -18,6 +18,8 @@ return (
 
     <footer>
     <p>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
+    <p>Plomería y Gas Necochea ©copyright</p>
+
   </footer>
   
   </div>

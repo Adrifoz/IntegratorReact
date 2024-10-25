@@ -3,6 +3,8 @@ import '../CSS/Cart.css';
 import { useSelector } from 'react-redux';
 import { reset } from '../ReduxToolkit/cartSlice';
 import { useDispatch } from 'react-redux';
+import { restToQuantity} from '../ReduxToolkit/cartSlice';
+import { addToQuantity } from '../ReduxToolkit/cartSlice';
 import { removeToCart } from '../ReduxToolkit/cartSlice';
 
 const Cart = ({ onClose }) => {
@@ -22,7 +24,13 @@ const dispatch = useDispatch();
               <div className='cardProduct' key={index}>
                 <h4 className='titleProdCart'>{item.nombre}</h4>
                 <p>Precio: ${item.precio}</p>
-                <p>Cantidad: {item.cantidad}</p>
+                <div className='quantity'>
+                  <p>Cantidad: {item.cantidad}</p>
+                  <div className='quantityButtons'>
+                    <button className='buttonCart' onClick={() => dispatch(addToQuantity({ id: item.id, precio: item.precio }))}>+</button>
+                    <button className='buttonCart' onClick={() => dispatch(restToQuantity({ id: item.id, precio: item.precio }))}>-</button>
+                  </div>
+                </div>
                 <button className='buttonCart' onClick={() => dispatch(removeToCart({ id: item.id, precio: item.precio }))}>Remover</button>
               </div>
             ))}

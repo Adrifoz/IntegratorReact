@@ -1,27 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { productos } from "../productos.js";
 import Producto from "./Producto.jsx";
 import '../CSS/Productos.css';
 
 function Productos() {
+const [selectedCategory, setSelectedCategory] = useState('');
+
+  const categories = [...new Set(productos.map(producto => producto.categoria))]; // Obtener categorías únicas
+
   return (
 
   <>
 
-      <div className="ProductosHome">
-          <h2>Artículos de Plomería/Fontanería</h2>
-     
+    <div className="ProductsContainer">
+        <h2>Artículos de Plomería/Fontanería</h2>
 
-      <div className="Productos">
-          {productos.map((prod)=>(
-              <Producto key={prod.id} {...prod} />
-          ))}
-      </div>
+            <div className='containerFilter'>
+                <div className='filter'>
+                    <p>Filtrar:</p>
+                    <select onChange={(e) => setSelectedCategory(e.target.value)} value={selectedCategory}>
+                        <option value=''>Todas las Categorías</option>
+                        {categories.map((categoria, index) => (
+                        <option key={index} value={categoria}>{categoria}</option>
+                        ))}
+                    </select>
+                </div>
+            </div>
 
-      <p>Todos los productos están sujetos a disponibilidad de stock.</p>
-      <p>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
+            <div className='sectionProducts'>
+            <div className="Products">
+                {productos.filter(producto => selectedCategory === '' || producto.categoria === selectedCategory)
+                .map(prod => (
+                    <Producto key={prod.id} {...prod} />
+                ))}
+            </div>
 
-      </div>
+        </div>
+
+       
+            <p className='description'>Todos los productos están sujetos a disponibilidad de stock.</p>
+            <p className='description'>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
+        
+
+        <footer>
+        <p>Plomería y Gas Necochea ©copyright</p>
+        </footer>
+
+    </div>
 
   </>
   )

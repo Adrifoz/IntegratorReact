@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 70px;
+    gap: 40px;
     padding-bottom: 30px;
 }
 
@@ -38,3 +38,11 @@
     height: auto;
   }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}

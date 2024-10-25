@@ -8,10 +8,16 @@ function AboutUs () {
 <>
 
 <div className='usContainer'>
+
+  <div class="headerContent">
+    <h2>Sobre Nosotros</h2>
+    <p>Conocé nuestra historia y misión</p>
+  </div>
+
   <div className='us'>
-    <h3>
+    <p>
       ¿Querés saber sobre nosotros?
-    </h3>
+    </p>
     <p>
     Esta empresa inició su actividad en el 2000 dedicándose a la fabricación de radiadores de hierro fundido para la calefacción doméstica en su factoría de Gavà (Barcelona). Tras los primeros radiadores de hierro fundido, complementó su catálogo con la producción de calderas y en 2001 entró definitivamente en el cuarto de baño iniciando la fabricación de bañeras.
 
@@ -37,6 +43,7 @@ Espacios para interactuar con la cultura del agua de la empresa, sus productos y
 
   <footer>
     <p>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
+    <p>Plomería y Gas Necochea ©copyright</p>
   </footer>
 
   </div>
