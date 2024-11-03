@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import { restToQuantity} from '../ReduxToolkit/cartSlice';
 import { addToQuantity } from '../ReduxToolkit/cartSlice';
 import { removeToCart } from '../ReduxToolkit/cartSlice';
+import { Link, Navigate } from 'react-router-dom';
 
 const Cart = ({ onClose }) => {
 const quantity = useSelector((state) => state.quantity)
@@ -38,6 +39,7 @@ const dispatch = useDispatch();
           <p className='totalCart'>Total: ${total}</p>
           <p className='totalProd'>Cantidad de productos: {quantity}</p>
           <button className='buttonCart' onClick={() => dispatch(reset())}>Limpiar</button>
+          <Link className='buttonCart' to="/BuyForm" >Comprar</Link>
       </div>
     </div>
     </>
