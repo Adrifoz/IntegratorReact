@@ -6,18 +6,18 @@ return (
 <>
 <div className='SignUpContainer'>
     <div className='SignUp'>
-    <label htmlFor="name">Username:</label>
+    <label htmlFor="name">Nombre de usuario:</label>
     <input type="name"/>
 
-    <label htmlFor="username">Password:</label>
+    <label htmlFor="username">Contraseña:</label>
     <input type="password"/>
-    <label htmlFor="username">Repeat your password:</label>
+    <label htmlFor="username">Repita su contraseña:</label>
     <input type="password"/>
     <div id="lower">
         
-        <input type="submit" value="Sign In"/>
+        <input type="submit" value="Entrar"/>
     </div>
-    <button href="#">Forgot your password?</button>
+    <button href="#">!¿Olvidó su contraseña?</button>
     </div>
 
 <footer>

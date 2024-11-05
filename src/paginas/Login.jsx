@@ -6,17 +6,17 @@ return (
 <>
 <div className='loginContainer'>
     <div className='login'>
-    <label htmlFor="name">Username:</label>
+    <label htmlFor="name">Nombre de usuario:</label>
     <input type="name"/>
 
-    <label htmlFor="username">Password:</label>
+    <label htmlFor="username">Contraseña:</label>
     <input type="password"/>
-    <div id="lower">
-        <input type="checkbox"/><label className="check" htmlFor="checkbox">Keep me logged in</label>
-        <input type="submit" value="Login"/>
+    <div className='buttonAndCheck'>
+        <input type="submit" value="Ingresar"/>
+        <input type="checkbox"/><label className="check" htmlFor="checkbox">Mantener mi sesión iniciada</label>
         
     </div>
-    <button href="#">Forgot your password?</button>
+    <button href="#">¿Olvidó su contraseña?</button>
     </div>
 
 <footer>

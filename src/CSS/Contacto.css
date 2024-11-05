@@ -21,7 +21,7 @@
 }
 
 .homeContacto h3 {
-    color: #1e90ff; /* Azul */
+    color: #0a5cad; /* Azul */
     text-align: center;
     margin-bottom: 50px;
   }
@@ -29,6 +29,8 @@
   .homeContacto p {
     line-height: 1.6;
     text-align: justify;
+    color: #2a2727; /* Color del texto */
+    font-weight: 600;
   }
 
   .homeContacto img {
@@ -45,4 +47,8 @@ footer{
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
+} 
+
+footer p{
+  color: #2a2727; /* Color del texto */
 }

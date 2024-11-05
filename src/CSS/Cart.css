@@ -20,13 +20,19 @@ position: fixed;
 .titleCart{
   padding: 6px;
   font-size: medium;
+  color: #271963;
+}
+
+.produc p{
+font-weight: 600;
+  color:  #bfb7e8;
 }
 
   .cardProduct{
     display: flex;
     flex-direction: column;
     border: outset 2px rgb(78, 76, 155);
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 5px;
     background-color: rgb(61, 61, 141);
     font-size: small;
@@ -44,26 +50,37 @@ position: fixed;
   .titleProdCart{
     padding: 4px;
     padding-bottom: 10px;
-    font-size: medium
+    font-size: medium;
+    color: #bddaf9;
   }
 
 .totalCart {
   padding-top: 15px;
   font-weight: bolder;
+  color: #0d0640;
 }
 .totalProd{
-  color: #0d0640;
+  color: #060318;
   font-weight: bold;
+  font-size: small;
+}
+.buttonsCart{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+
 }
 
  .buttonCart{
   background-color: #0d0640; /* Color celeste */
   color: rgb(205, 203, 211);
   border: none;
-  border-radius: 5px;
+  text-decoration: none;
+  border-radius: 4px;
   padding: 4px 3px;
   font-size: 10px;
-  width: 60px;
+  width: 50px;
+  height: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
 }
@@ -71,7 +88,7 @@ position: fixed;
 .buttonCart:hover {
   background-color: #060318; /* Color azul */
   transform: scale(1.06); /* Aumenta ligeramente el tamaño */
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .quantity{
@@ -85,4 +102,14 @@ position: fixed;
   height: 15px;
   width: 15px;
   margin: 1px;
+}
+
+#linkBuy {
+margin-left: 5px;
+background-color: rgb(12, 126, 2);
+display: flex;
+justify-content: center;
+align-items: center;
+width: 60px;
+height: 25px;
 }

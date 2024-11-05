@@ -16,6 +16,13 @@
     flex-direction: column;
 }
 
+.buttonAndCheck{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
 footer{
     margin-top: 400px;
 }
