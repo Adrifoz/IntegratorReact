@@ -40,6 +40,33 @@
     height: auto;
   }
 
+  .forms{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+
+  .errorMessage {
+    color: rgb(190, 29, 29);          /* Cambia el color del texto a rojo */
+    font-size: 14px;     /* Tamaño de fuente */
+    margin-top: 5px;     /* Margen superior */
+  }
+  
+  .successMessage{
+    padding-top: 15px;
+  }
+
 footer{
     display: flex;
     flex-direction: column;
