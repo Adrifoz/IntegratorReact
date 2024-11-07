@@ -48,6 +48,10 @@ ul {
 
 }
 
+.nav-links { list-style: none; display: flex; } 
+.nav-links li { margin: 0 15px;
+}
+
 .Login {
     display: flex;
     flex-direction: column;
@@ -60,6 +64,11 @@ ul {
     font-size: 18px;
 }
 
+.menu-toggle { 
+    display: none; flex-direction: column; cursor: pointer; }
+
+    .menu-toggle .bar { width: 25px; height: 3px; margin: 4px 0; background-color: #fff; }
+
 /* Estilos para pantallas grandes (escritorio) */
 /* @media (min-width: 1024px) {
     .container {
@@ -68,16 +77,30 @@ ul {
 } */
 
 /* Estilos para tablets (pantallas medianas) */
-@media (max-width: 1023px) and (min-width: 768px) {
+/* @media (max-width: 1023px) and (min-width: 768px) {
     .container {
         max-width: 700px;
     }
-}
+} */
 
 /* Estilos para celulares (pantallas pequeñas) */
 @media (max-width: 767px) {
-    .container {
-        padding: 10px;
-        font-size: 14px;
+
+    #NavContainer { justify-content: space-between; }
+    
+    .nav-links{ display: none; flex-direction: column; width: 100%; background-color: rgb(61, 61, 141); position: absolute; top: 80px; left: 0; }
+
+    .nav-links.active{
+        display: flex; 
     }
-}
+
+    .nav-links li { 
+        margin: 20px 0; text-align: center;
+     }
+     .menu-toggle { display: flex; } 
+    
+    }
+
+
+
+
