@@ -59,3 +59,25 @@ ul {
     color:rgb(206, 203, 240);
     font-size: 18px;
 }
+
+/* Estilos para pantallas grandes (escritorio) */
+/* @media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+    }
+} */
+
+/* Estilos para tablets (pantallas medianas) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+/* Estilos para celulares (pantallas pequeñas) */
+@media (max-width: 767px) {
+    .container {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
