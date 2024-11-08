@@ -36,16 +36,16 @@ function Layout() {
 
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <li>
-                        <Link className='navLink' to='/'>Home</Link>
+                        <Link className='navLink' to='/' onClick={handleMenuToggle}>Home</Link>
                     </li>
                     <li>
-                        <Link className='navLink' to='Productos'>Productos</Link>
+                        <Link className='navLink' to='Productos' onClick={handleMenuToggle}>Productos</Link>
                     </li>
                     <li>
-                        <Link className='navLink' to='AboutUs'>Sobre Nosotros</Link>
+                        <Link className='navLink' to='AboutUs' onClick={handleMenuToggle}>Sobre Nosotros</Link>
                     </li>
                     <li>
-                        <Link className='navLink' to='Contacto'>Contacto</Link>
+                        <Link className='navLink' to='Contacto' onClick={handleMenuToggle}>Contacto</Link>
                     </li>
                     <li>
                         <Link className='navLink' onClick={modifield}>Carrito</Link>
@@ -54,10 +54,10 @@ function Layout() {
                     
                     <ul className='Login'>
                         <li>
-                            <Link className='navLink' to='Login'>Iniciá Sesión</Link>
+                            <Link className='navLink' to='Login' onClick={handleMenuToggle}>Iniciá Sesión</Link>
                         </li>
                         <li>
-                            <Link className='navLink' to='SignUp'>Registrate</Link>
+                            <Link className='navLink' to='SignUp' onClick={handleMenuToggle}>Registrate</Link>
                         </li>
                     </ul>
                 </ul>

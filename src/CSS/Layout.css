@@ -48,7 +48,11 @@ ul {
 
 }
 
-.nav-links { list-style: none; display: flex; } 
+.nav-links { 
+    list-style: none; 
+    display: flex;
+    align-items: center;   
+} 
 .nav-links li { margin: 0 15px;
 }
 
@@ -65,9 +69,17 @@ ul {
 }
 
 .menu-toggle { 
-    display: none; flex-direction: column; cursor: pointer; }
+    display: none; 
+    flex-direction: column; 
+    cursor: pointer; 
+}
 
-    .menu-toggle .bar { width: 25px; height: 3px; margin: 4px 0; background-color: #fff; }
+.menu-toggle .bar { 
+        width: 25px; 
+        height: 3px; 
+        margin: 4px 0; 
+        background-color: #fff; 
+}    
 
 /* Estilos para pantallas grandes (escritorio) */
 /* @media (min-width: 1024px) {
@@ -86,20 +98,39 @@ ul {
 /* Estilos para celulares (pantallas pequeñas) */
 @media (max-width: 767px) {
 
-    #NavContainer { justify-content: space-between; }
+    #NavContainer { 
+        justify-content: space-between; 
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+    }
     
-    .nav-links{ display: none; flex-direction: column; width: 100%; background-color: rgb(61, 61, 141); position: absolute; top: 80px; left: 0; }
+    .nav-links{ 
+        display: none; 
+        flex-direction: column; 
+        width: 100%;
+        background-color: rgb(61, 61, 141); 
+        position: absolute; 
+       
+        left: 0;
+        top:70px; 
+        padding-bottom: 40px;
+        
+    }
 
     .nav-links.active{
         display: flex; 
     }
 
     .nav-links li { 
-        margin: 20px 0; text-align: center;
+        margin: 20px 0; 
+        text-align: center;
      }
-     .menu-toggle { display: flex; } 
+     .menu-toggle { 
+        display: flex; 
+    } 
     
-    }
+}
 
 
 

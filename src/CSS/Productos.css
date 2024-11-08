@@ -5,6 +5,7 @@
     padding-bottom: 30px;
     gap: 50px;
     align-items: center;
+    justify-content: ;
 }
 
 .sectionProducts{
@@ -40,7 +41,7 @@ background-color: rgb(61, 61, 141);
 .Products {
     display: flex;
     gap: 30px;
-    justify-content: center;
+    justify-content: start;
     padding-bottom: 70px;
 }
 
@@ -78,9 +79,9 @@ background-color: rgb(61, 61, 141);
 
 /* JUSTIFY-CONTENT INDEPENDIENTE PARA MEJOR MANEJO DE ETIQUETAS Y PÁRRAFOS */
 
-h2 {
-    display: flex;
-    justify-content: center;
+.titleCardProducts {
+    
+    text-align: center; /* Opciones: left, right, center, justify */
 }
 /* 
 p {
@@ -91,8 +92,6 @@ font-weight: 600;
 .titleCard {
     display: flex;
     padding-bottom: 6px;
-    font-size: 18px;
-    color: #0a5cad;
     margin-bottom: 10px;
 }
 
@@ -135,3 +134,51 @@ footer, .description {
     padding-bottom: 20px; 
     font-weight: 600;
   }
+
+  @media (max-width: 767px) {
+
+
+
+    nav {
+        position: absolute;
+    }
+    .ProductsContainer{
+        max-width: 650px;
+        
+    }
+
+     .Products{
+    
+        transform: scale(0.65);
+
+        
+        
+     }
+   
+}
+
+@media (max-width: 520px) {
+    .Products{
+    
+        transform: scale(0.55);
+     }
+}
+
+
+@media (max-width: 425px) {
+    
+
+          .Products{
+            transform: scale(1);
+            flex-wrap: wrap;
+            
+        
+          }
+          .Card{
+            margin-bottom: 30px ;
+          }
+    
+          
+       
+    
+}

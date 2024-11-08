@@ -13,7 +13,7 @@ const [selectedCategory, setSelectedCategory] = useState('');
   <>
 
     <div className="ProductsContainer">
-        <h2>Artículos de Plomería/Fontanería</h2>
+        <h2 className='titleCardProducts'>Artículos de Plomería/Fontanería</h2>
 
             <div className='containerFilter'>
                 <div className='filter'>
