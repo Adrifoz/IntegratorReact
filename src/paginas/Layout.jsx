@@ -28,11 +28,11 @@ function Layout() {
         <nav>
             
             <ul id='NavContainer'>
-                <button className="menu-toggle" aria-label="Abrir menú" onClick={handleMenuToggle}> 
+                <Link className="menuToggle" aria-label="Abrir menú" onClick={handleMenuToggle}> 
                     <span className="bar"></span> 
                     <span className="bar"></span> 
                     <span className="bar"></span> 
-                </button>
+                </Link>
 
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <li>
@@ -42,7 +42,7 @@ function Layout() {
                         <Link className='navLink' to='Productos' onClick={handleMenuToggle}>Productos</Link>
                     </li>
                     <li>
-                        <Link className='navLink' to='AboutUs' onClick={handleMenuToggle}>Sobre Nosotros</Link>
+                        <Link className='navLink' id='aboutUs' to='AboutUs' onClick={handleMenuToggle}>Sobre Nosotros</Link>
                     </li>
                     <li>
                         <Link className='navLink' to='Contacto' onClick={handleMenuToggle}>Contacto</Link>
@@ -54,10 +54,10 @@ function Layout() {
                     
                     <ul className='Login'>
                         <li>
-                            <Link className='navLink' to='Login' onClick={handleMenuToggle}>Iniciá Sesión</Link>
+                            <Link className='navLink' to='Login' onClick={handleMenuToggle}>Iniciar Sesión</Link>
                         </li>
                         <li>
-                            <Link className='navLink' to='SignUp' onClick={handleMenuToggle}>Registrate</Link>
+                            <Link className='navLink' to='SignUp' onClick={handleMenuToggle}>Registrarse</Link>
                         </li>
                     </ul>
                 </ul>

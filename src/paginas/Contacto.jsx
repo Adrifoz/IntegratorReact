@@ -15,12 +15,13 @@ return (
         Escríbanos!
       </h3>
     <Formik 
-      initialValues={{ nombre: '', apellido: '', email: '', asunto: '',celular: '' }} 
+      initialValues={{ nombre: '', apellido: '', email: '', asunto: '',celular: '', comentario: ''}} 
       validationSchema={Yup.object({ nombre: Yup.string().required('Campo requerido'), 
       apellido: Yup.string().required('Campo requerido'), 
       email: Yup.string().matches(regEmail, "Mail no valido").required('Campo requerido'), 
       asunto: Yup.string().required('Campo requerido'), 
       celular: Yup.number().required('Campo requerido'),
+      comentario: Yup.string().required('Campo requerido'), 
       })} 
       onSubmit={(values, { setSubmitting, resetForm }) => {
         setTimeout(() => {
@@ -73,7 +74,17 @@ return (
               <ErrorMessage name="celular" component="div" className="errorMessage" />
           </div>
 
-          <button type="submit" disabled={isSubmitting}>
+          <div className="form">
+            <div id='commentContainer'>
+              <label htmlFor="celular">Comentário:</label>
+              <div>
+                <Field name="comentario" className="comment" type="text" placeholder="Escriba su comentario" />
+            </div>
+            </div>
+              <ErrorMessage name="comentario" component="div" className="errorMessage" />
+          </div>
+
+          <button type="submit" className='sendContact' disabled={isSubmitting}>
             Enviar
           </button>
           </Form>
@@ -87,18 +98,23 @@ return (
       <h3>
         Otros contactos
       </h3>
-          <p>Celular: 2262666666 / 2262555555</p>
+      <div className='othersContacts'>
+          <p >Celular: 2262666666 / 2262555555</p>
           <p>Mail: plomeriaygas@gmail.com</p>
           <p>Instagram: @plomeriaygasnecochea</p>
-          
+          </div>
+
           <img src={"https://i.pinimg.com/550x/7e/e6/f6/7ee6f6d7043c1b2e34726d4f71976747.jpg"} alt={"Caricatura de plomero"}/>
     </div>
 
-    <footer>
-    <p>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
-    <p>Plomería y Gas Necochea ©copyright</p>
+    <p className='description'>Para más información no dude en entrar en contacto con nosotros. </p>
+    <p className='description'>¡Lo esperamos!</p>
 
-  </footer>
+    <footer>
+
+      <p>Plomería y Gas Necochea ©copyright</p>
+
+    </footer>
   
   </div>
   </>

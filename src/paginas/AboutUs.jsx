@@ -40,9 +40,11 @@ Espacios para interactuar con la cultura del agua de la empresa, sus productos y
         <img src={URL} alt={"Caricatura de plomero"}/>
   </div>
 
+  <p className='description'>Para más información no dude en entrar en contacto con nosotros</p>
+  <p className='description'>¡Lo esperamos!</p>
 
   <footer>
-    <p>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
+    
     <p>Plomería y Gas Necochea ©copyright</p>
   </footer>
 

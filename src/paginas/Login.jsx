@@ -5,6 +5,7 @@ function Login () {
 return ( 
 <>
 <div className='loginContainer'>
+<h4> Inície sesión</h4>
     <div className='login'>
     <label htmlFor="name">Nombre de usuario:</label>
     <input type="name"/>
@@ -20,7 +21,6 @@ return (
     </div>
 
 <footer>
-    <p>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
     <p>Plomería y Gas Necochea ©copyright</p>
 </footer>
 

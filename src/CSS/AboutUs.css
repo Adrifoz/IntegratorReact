@@ -55,3 +55,28 @@
     flex-direction: column;
     align-items: center;
   }
+  /* .description{
+    color:#2a2727;
+  } */
+
+  @media (max-width: 767px) {
+    .headerContent {
+      width: 80%;
+      }
+      
+      .us{
+        width: 80%;
+      }
+
+}
+
+@media (max-width: 330px) {
+
+  .headerContent h2{
+    text-align: center;
+  }
+  .headerContent p{
+    text-align: center;
+  }
+
+}

@@ -68,17 +68,19 @@ ul {
     font-size: 18px;
 }
 
-.menu-toggle { 
+.menuToggle { 
     display: none; 
     flex-direction: column; 
     cursor: pointer; 
+    background-color: rgb(61, 61, 141);
+    padding-left: 25px;
 }
 
-.menu-toggle .bar { 
+.menuToggle .bar { 
         width: 25px; 
         height: 3px; 
-        margin: 4px 0; 
-        background-color: #fff; 
+        margin: 3px 0; 
+        background-color: black; 
 }    
 
 /* Estilos para pantallas grandes (escritorio) */
@@ -96,7 +98,7 @@ ul {
 } */
 
 /* Estilos para celulares (pantallas pequeñas) */
-@media (max-width: 767px) {
+@media (max-width: 810px) {
 
     #NavContainer { 
         justify-content: space-between; 
@@ -111,7 +113,6 @@ ul {
         width: 100%;
         background-color: rgb(61, 61, 141); 
         position: absolute; 
-       
         left: 0;
         top:70px; 
         padding-bottom: 40px;
@@ -126,8 +127,10 @@ ul {
         margin: 20px 0; 
         text-align: center;
      }
-     .menu-toggle { 
+
+     .menuToggle { 
         display: flex; 
+        
     } 
     
 }

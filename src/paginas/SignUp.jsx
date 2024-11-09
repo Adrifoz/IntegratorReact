@@ -5,6 +5,8 @@ function SignUp () {
 return ( 
 <>
 <div className='SignUpContainer'>
+    <h3 className='titleSign'>Bienvenido!</h3>
+    <h4> Regístrate aqui:</h4>
     <div className='SignUp'>
     <label htmlFor="name">Nombre de usuario:</label>
     <input type="name"/>
@@ -17,11 +19,10 @@ return (
         
         <input type="submit" value="Entrar"/>
     </div>
-    <button href="#">!¿Olvidó su contraseña?</button>
+    <button href="#">¿Olvidó su contraseña?</button>
     </div>
 
 <footer>
-    <p>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
     <p>Plomería y Gas Necochea ©copyright</p>
 </footer>
 
