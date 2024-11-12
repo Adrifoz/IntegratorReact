@@ -63,6 +63,12 @@
 
 }
 
+@media (max-width: 380px) {
+  .us p {
+    text-align: start;
+  }
+}
+
 @media (max-width: 330px) {
 
   .headerContent h2{
@@ -70,6 +76,9 @@
   }
   .headerContent p{
     text-align: center;
+  }
+  .us p {
+    font-size: small;
   }
 
 }
