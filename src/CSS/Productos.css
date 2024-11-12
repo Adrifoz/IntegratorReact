@@ -17,13 +17,14 @@
     align-items: center;
     gap: 20px;
 
-
 }
 
 #containerFilter{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    
     padding-right: 50px;
     
 }
@@ -47,7 +48,6 @@ background-color: rgb(61, 61, 141);
 .Products {
     display: flex;
     gap: 30px;
-    justify-content: start;
     padding-bottom: 70px;
 }
 
@@ -58,13 +58,13 @@ background-color: rgb(61, 61, 141);
     height: 250px;
     padding-top: 10px;
     background-color: aquamarine;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .Card:hover {
  
-        background-color: #b6c5d4; /* Color azul */
-        transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+        background-color: #b6c5d4;
+        transform: scale(1.05);
       & img{
         border: solid #a5a7c9;
       }
@@ -85,7 +85,7 @@ background-color: rgb(61, 61, 141);
 
 .titleCardProducts {
     
-    text-align: center; /* Opciones: left, right, center, justify */
+    text-align: center; 
 }
 
 .titleCard {
@@ -110,21 +110,20 @@ img {
     width: 180px;
     height: 160px;
 }
-/* Estilo base del botón */
 .Card button {
-    background-color: #00bfff; /* Color celeste */
+    background-color: #00bfff;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
   }
   
-  /* Estilo del botón al pasar el mouse (hover) */
+
   .Card button:hover {
-    background-color: #b2cd8b; /* Color azul */
-    transform: scale(1.03); /* Aumenta ligeramente el tamaño */
+    background-color: #b2cd8b; 
+    transform: scale(1.03);
     border-radius: 2px;
   }
 
@@ -155,9 +154,7 @@ align-items: center;
 @media (max-width: 767px) {
 
     .Products{
-    
         transform: scale(0.65);
-        
      }
 
 }
@@ -192,9 +189,16 @@ align-items: center;
     
 }
 
+@media (max-width: 450px) {
+    #containerFilter{
+        align-items: flex-start;
+        padding-left: 40px;
+     }
+}
+
 @media (max-width: 270px) {
     #containerFilter{
-    justify-content: flex-start;
-    margin-left: 20px;
+    align-items: center;
+padding: 0px;
      }
 }

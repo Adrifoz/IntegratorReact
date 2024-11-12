@@ -1,47 +1,48 @@
 import React from 'react';
 import '../CSS/Cart.css';
 import { useSelector } from 'react-redux';
-import { reset } from '../ReduxToolkit/cartSlice';
 import { useDispatch } from 'react-redux';
-import { restToQuantity} from '../ReduxToolkit/cartSlice';
-import { addToQuantity } from '../ReduxToolkit/cartSlice';
-import { removeToCart } from '../ReduxToolkit/cartSlice';
+import { restToQuantity, addToQuantity, removeToCart, reset} from '../ReduxToolkit/cartSlice';
 import { Link } from 'react-router-dom';
+import States from './StatesControls';
 
-const Cart = ({ onClose }) => {
+
+const Cart = () => {
 const quantity = useSelector((state) => state.quantity)
 const total = useSelector((state) => state.total)
 const produc = useSelector((state) => state.cartItems)
 const dispatch = useDispatch();
 
+const  { toggles } = States();
+
+
   return ( 
     <>
       <div className="contentCart">
-      <div className="cart">
-        <span className="close" onClick={onClose}></span>
         <h3 className='titleCart'>Contenido del carrito:</h3>
-          <div className="produc">
-            {produc.map((item, index) => (
-              <div className='cardProduct' key={index}>
-                <h4 className='titleProdCart'>{item.nombre}</h4>
-                <p>Precio: ${item.precio}</p>
-                <div className='quantity'>
-                  <p>Cantidad: {item.cantidad}</p>
-                  <div className='quantityButtons'>
-                    <button className='buttonCart' onClick={() => dispatch(addToQuantity({ id: item.id, precio: item.precio }))}>+</button>
-                    <button className='buttonCart' onClick={() => dispatch(restToQuantity({ id: item.id, precio: item.precio }))}>-</button>
+        <div className="cart">
+            <div className="produc">
+              {produc.map((item, index) => (
+                <div className="cardProduct" key={index}>
+                  <h4 className='titleProdCart'>{item.nombre}</h4>
+                  <p>Precio: ${item.precio}</p>
+                  <div className='quantity'>
+                    <p>Cantidad: {item.cantidad}</p>
+                    <div className='quantityButtons'>
+                      <button className='buttonCart' onClick={() => dispatch(addToQuantity({ id: item.id, precio: item.precio }))}>+</button>
+                      <button className='buttonCart' onClick={() => dispatch(restToQuantity({ id: item.id, precio: item.precio }))}>-</button>
+                    </div>
                   </div>
+                  <button className='buttonCart' onClick={() => dispatch(removeToCart({ id: item.id, precio: item.precio }))}>Remover</button>
                 </div>
-                <button className='buttonCart' onClick={() => dispatch(removeToCart({ id: item.id, precio: item.precio }))}>Remover</button>
-              </div>
-            ))}
-          </div>
-          <p className='totalCart'>Total: ${total}</p>
-          <p className='totalProd'>Cantidad de productos: {quantity}</p>
-          
-          <div className='buttonsCart'>
-            <button className='buttonCart' onClick={() => dispatch(reset())}>Limpiar</button>
-            <Link className='buttonCart' id='linkBuy' to="/BuyForm" >Comprar</Link>
+              ))}
+            </div>
+            <p className='totalCart'>Total: ${total}</p>
+            <p className='totalProd'>Cantidad de productos: {quantity}</p>
+            
+            <div className='buttonsCart'>
+              <button className='buttonCart' onClick={() => dispatch(reset())}>Limpiar</button>
+              <Link className='buttonCart' id='linkBuy' onClick={{toggles}} to="/BuyForm" >Comprar</Link>
           </div>
       </div>
     </div>
@@ -51,14 +52,3 @@ const dispatch = useDispatch();
 };
 
 export default Cart;
-
-// Corregir llamado a funcion changeClass desde Cart y Layout
-
-
-
-
-
-// div className={`${!cartOpen ? 'default' : 'modified'}`}>
-      //    <div className='modified'>
-      // <h2>Carrito</h2>
-      // </div>

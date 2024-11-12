@@ -2,14 +2,12 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import '../CSS/buyForm.css';
+import '../CSS/BuyForm.css';
 import { useNavigate } from 'react-router-dom';
-import { reset } from '../ReduxToolkit/cartSlice';
 import { useDispatch } from 'react-redux';
 
 const BuyForm = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
 
     return (
       <>
@@ -26,21 +24,20 @@ const BuyForm = () => {
               .required('Campo requerido')
           })}
           onSubmit={() => {
-              dispatch(reset());
-              navigate('/Felicitaciones');
+              navigate('/BuyConfirm');
 
           }}
         >
           {({ isSubmitting }) => (
             <Form>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <Field name="email" type="email" />
+                <label htmlFor="email">Email:</label>
+                <Field name="email" type="email" className="field" />
                 <ErrorMessage name="email" component="div" className="error-message" />
               </div>
               <div className="form-group">
-                <label htmlFor="password">Contraseña</label>
-                <Field name="password" type="password" />
+                <label htmlFor="password">Contraseña:</label>
+                <Field name="password" type="password" className="field" />
                 <ErrorMessage name="password" component="div" className="error-message" />
               </div>
               <button type="submit" disabled={isSubmitting}>

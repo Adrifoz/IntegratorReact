@@ -5,7 +5,9 @@ function Login () {
 return ( 
 <>
 <div className='loginContainer'>
-<h4> Inície sesión</h4>
+<h3 className='titleSign'>Bienvenido!</h3>
+
+<h4> Iniciar sesión</h4>
     <div className='login'>
     <label htmlFor="name">Nombre de usuario:</label>
     <input type="name"/>

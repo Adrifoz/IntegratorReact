@@ -9,8 +9,8 @@
 }
 
 .homeContacto {
-    background-color: #cde1f2; /* Fondo celeste claro */
-    color: #2a2727; /* Color del texto */
+    background-color: #cde1f2;
+    color: #2a2727;
     padding: 30px;
     border-radius: 10px;
     padding: 20px auto;
@@ -21,7 +21,7 @@
 }
 
 .homeContacto h3 {
-    color: #0a5cad; /* Azul */
+    color: #0a5cad; 
     text-align: center;
     margin-bottom: 50px;
   }
@@ -29,7 +29,7 @@
   .homeContacto p {
     line-height: 1.6;
     text-align: justify;
-    color: #2a2727; /* Color del texto */
+    color: #2a2727;
     font-weight: 600;
   }
 
@@ -58,9 +58,9 @@
 
 
   .errorMessage {
-    color: rgb(190, 29, 29);          /* Cambia el color del texto a rojo */
-    font-size: 14px;     /* Tamaño de fuente */
-    margin-top: 5px;     /* Margen superior */
+    color: rgb(190, 29, 29);         
+    font-size: 14px;   
+    margin-top: 5px;    
   }
   
   .successMessage{
@@ -87,7 +87,7 @@ footer{
 } 
 
 footer p{
-  color: #2a2727; /* Color del texto */
+  color: #2a2727; 
 }
 
 @media (max-width: 530px) {

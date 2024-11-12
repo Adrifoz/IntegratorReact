@@ -1,0 +1,81 @@
+.contentConfirm{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.producConfirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.cardConfirm{
+width: 90%;
+display: flex;
+gap: 20px;
+justify-content: center;
+font-weight: bold;
+border: outset 2px rgb(78, 76, 155);
+border-radius: 5px;
+padding: 5px;
+background: linear-gradient(135deg, #6982c8, #a2bbef, hsl(217, 90%, 60%), #93c5fd);
+
+}
+
+.cardConfirm p{
+    color: black;
+    }
+
+
+@media (max-width: 767px) {
+
+    .producConfirm {
+        width: 90vw;
+    }
+
+.cardConfirm {
+width: 100vw;
+ display: flex;
+ justify-content: space-around;
+}
+
+}
+
+@media (max-width: 470px) {
+
+    .producConfirm {
+        width: 97vw;
+    }
+
+    .cardConfirm p{
+        width: 20%;
+    }
+
+    }
+    
+    @media (max-width: 405px) {
+
+        .producConfirm {
+            width: 97vw;
+        }
+    
+        .cardConfirm p{
+           font-size: small;
+            
+        }
+        }
+
+    @media (max-width: 250px) {
+        .cardConfirm p{
+        width: 15%;
+
+            }
+    }

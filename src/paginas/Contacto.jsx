@@ -76,9 +76,9 @@ return (
 
           <div className="form">
             <div id='commentContainer'>
-              <label htmlFor="celular">Comentário:</label>
+              <label htmlFor="comentario">Comentário:</label>
               <div>
-                <Field name="comentario" className="comment" type="text" placeholder="Escriba su comentario" />
+                <Field name="comentario" className="comment" type="text" placeholder=" Escriba su comentario" />
             </div>
             </div>
               <ErrorMessage name="comentario" component="div" className="errorMessage" />

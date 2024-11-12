@@ -1,9 +1,4 @@
-/* .usContainer {
-    padding-top: 170px;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: center;
-} */
+
 .usContainer {
       padding-top: 17vh;
       padding-bottom: 30px;
@@ -30,8 +25,8 @@
     }
   
 .us {
-    background-color: #cde1f2; /* Fondo celeste claro */
-    color: #2a2727; /* Color del texto */
+    background-color: #cde1f2; 
+    color: #2a2727;
     padding: 30px;
     border-radius: 10px;
     max-width: 800px;
@@ -55,9 +50,7 @@
     flex-direction: column;
     align-items: center;
   }
-  /* .description{
-    color:#2a2727;
-  } */
+
 
   @media (max-width: 767px) {
     .headerContent {

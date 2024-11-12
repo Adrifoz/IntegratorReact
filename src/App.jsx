@@ -9,8 +9,9 @@ import Login from "./paginas/Login";
 import SignUp from "./paginas/SignUp";
 import AboutUs from "./paginas/AboutUs";
 import Contacto from "./paginas/Contacto";
-import Felicitaciones from "./paginas/Felicitaciones";
-import BuyForm from "./paginas/BuyForm"
+import Congrulations from "./paginas/Congrulations";
+import BuyForm from "./paginas/BuyForm";
+import BuyConfirm from "./paginas/BuyConfirm";
 
 
 function App() {
@@ -27,8 +28,11 @@ function App() {
                 <Route path='SignUp' element={<SignUp/>} />
                 <Route path='*' element={<NoPage/>} />
 
+                <Route path="Cart" element={<Cart />} /> 
+
                 <Route path="/BuyForm" element={<BuyForm/>}/>
-                <Route path="/Felicitaciones" element={<Felicitaciones/>}/>
+                <Route path="/BuyConfirm" element={<BuyConfirm/>}/>
+                <Route path="/Congrulations" element={<Congrulations/>}/>
             </Route>
         </Routes>
     </BrowserRouter>

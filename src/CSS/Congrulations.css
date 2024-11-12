@@ -1,9 +1,4 @@
-/* .usContainer {
-    padding-top: 170px;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: center;
-} */
+
 .usContainer {
     padding-top: 17vh;
     padding-bottom: 30px;
@@ -19,7 +14,7 @@
     flex-direction: column;
     max-width: 800px;
     align-items: center;
-    width: 35%;
+    width: 45%;
     height: 15%;
     padding: 15px;
     box-shadow: 15px 9px 15px rgba(0, 0, 0, 0.1);
@@ -27,11 +22,12 @@
     border-radius: 2%;
     gap: 15px;
     color: #050425;
+    text-align: center;
   }
 
 .us {
-  background-color: #cde1f2; /* Fondo celeste claro */
-  color: #2a2727; /* Color del texto */
+  background-color: #cde1f2; 
+  color: #2a2727; 
   padding: 30px;
   border-radius: 10px;
   max-width: 800px;
@@ -43,10 +39,15 @@
   line-height: 1.6;
   text-align: justify;
   color: #15187b;
+
+}
+
+.CardSuccessContent h3 {
+  font-size: 28px;
 }
 
 .linkSucess{
-    background-color: #2f829e; /* Color celeste */
+    background-color: #2f829e; 
     color: white;
     border-radius: 7px;
     padding: 10px;
@@ -58,8 +59,8 @@
 }
 
 .linkSucess:hover {
-    background-color: #4833a8; /* Color azul */
-    transform: scale(1.10); /* Aumenta ligeramente el tamaño */
+    background-color: #4833a8; 
+    transform: scale(1.10); 
     border-radius: 5px;
   }
 
@@ -68,4 +69,28 @@ footer p{
   flex-direction: column;
   align-items: center;
   color: black;
+}
+
+
+@media (max-width: 810px) {
+
+  .CardSuccessContent {
+    width: 80%;
+    height: 70vh;
+    justify-content: center;
+    
+  }
+
+}
+
+@media (max-width: 630px) {
+
+  .CardSuccessContent p {
+  font-size: small;
+  }
+
+  .CardSuccessContent h3 {
+    font-size: 20px;
+  }
+
 }

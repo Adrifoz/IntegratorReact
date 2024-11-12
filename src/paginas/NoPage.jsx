@@ -4,7 +4,7 @@ import '../CSS/NoPage.css'
 function NoPage() {
   return (
     <div className='NoPage'>
-        <h1>Página inexistente</h1>
+        <h1>ERROR: Página inexistente</h1>
     </div>
   )
 }
