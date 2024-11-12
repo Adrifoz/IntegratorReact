@@ -9,14 +9,14 @@ return (
 
 <h4> Iniciar sesión</h4>
     <div className='login'>
-    <label htmlFor="name">Nombre de usuario:</label>
-    <input type="name"/>
+    <label htmlFor="username">Nombre de usuario:</label>
+    <input name="username" type="username"/>
 
-    <label htmlFor="username">Contraseña:</label>
-    <input type="password"/>
+    <label htmlFor="password">Contraseña:</label>
+    <input name="password" type="password"/>
     <div className='buttonAndCheck'>
-        <input type="submit" value="Ingresar"/>
-        <input type="checkbox"/><label className="check" htmlFor="checkbox">Mantener mi sesión iniciada</label>
+        <input name='submit' type="submit" value="Ingresar"/>
+        <input name="checkbox" type="checkbox"/><label className="check" htmlFor="checkbox">Mantener mi sesión iniciada</label>
         
     </div>
     <button href="#">¿Olvidó su contraseña?</button>

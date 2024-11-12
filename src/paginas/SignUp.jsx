@@ -9,13 +9,13 @@ return (
     <h3 className='titleSign'>Bienvenido!</h3>
     <h4> Regístrate aqui:</h4>
     <div className='SignUp'>
-        <label htmlFor="name">Nombre de usuario:</label>
-        <input type="name"/>
+        <label htmlFor="username">Nombre de usuario:</label>
+        <input name="username" type="username"/>
 
-        <label htmlFor="username">Contraseña:</label>
-        <input type="password"/>
-        <label htmlFor="username">Repita su contraseña:</label>
-        <input type="password"/>
+        <label htmlFor="password">Contraseña:</label>
+        <input name="password" type="password"/>
+        <label htmlFor="password">Repita su contraseña:</label>
+        <input name="password" type="password"/>
         <div id="lower">
             <input type="submit" value="Entrar"/>
         </div>
