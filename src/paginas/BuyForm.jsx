@@ -1,10 +1,8 @@
-
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import '../CSS/BuyForm.css';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import '../CSS/BuyForm.css';
 
 const BuyForm = () => {
   const navigate = useNavigate();
@@ -29,7 +27,7 @@ const BuyForm = () => {
           }}
         >
           {({ isSubmitting }) => (
-            <Form>
+            <Form className='Form'>
               <div className="form-group">
                 <label htmlFor="email">Email:</label>
                 <Field name="email" type="email" className="field" />
