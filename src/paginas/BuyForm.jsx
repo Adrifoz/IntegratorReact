@@ -27,7 +27,7 @@ const BuyForm = () => {
           }}
         >
           {({ isSubmitting }) => (
-            <Form className='Form'>
+            <Form className='formBuy'>
               <div className="form-group">
                 <label htmlFor="email">Email:</label>
                 <Field name="email" type="email" className="field" />
