@@ -12,6 +12,7 @@ import Contacto from "./paginas/Contacto";
 import Congrulations from "./paginas/Congrulations";
 import BuyForm from "./paginas/BuyForm";
 import BuyConfirm from "./paginas/BuyConfirm";
+import "./vercel.json";
 
 
 function App() {
