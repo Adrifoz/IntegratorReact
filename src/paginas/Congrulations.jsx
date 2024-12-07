@@ -5,7 +5,7 @@ import '../CSS/Congrulations.css';
 const Congrulations = () => {
 
   return (
-    <div className='usContainer'>
+    <div className='container'>
     <div className="CardSuccessContent">
       <h3>¡Gracias por tu compra!</h3>
       <p>Tu pedido ha sido recibido con éxito.</p>

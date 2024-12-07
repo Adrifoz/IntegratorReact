@@ -9,10 +9,10 @@ function Contacto () {
 
 return ( 
 <>
-<div className='contactContainer'>
-  <div className='homeContacto'>
+<div className='container'>
+  <div className='paragraph'>
       <h3>
-        Escríbanos!
+        Escríbenos!
       </h3>
     <Formik 
       initialValues={{ nombre: '', apellido: '', email: '', asunto: '',celular: '', comentario: ''}} 
@@ -94,7 +94,7 @@ return (
     {formSubmitted && <p className="successMessage">Formulario enviado correctamente.</p>}    
   </div>
 
-    <div className='homeContacto'>
+    <div className='paragraph'>
       <h3>
         Otros contactos
       </h3>
@@ -107,13 +107,10 @@ return (
           <img src={"https://i.pinimg.com/550x/7e/e6/f6/7ee6f6d7043c1b2e34726d4f71976747.jpg"} alt={"Caricatura de plomero"}/>
     </div>
 
-    <p className='description'>Para más información no dude en entrar en contacto con nosotros. </p>
-    <p className='description'>¡Lo esperamos!</p>
-
     <footer>
-
+      <p className='description'>Para más información no dude en entrar en contacto con nosotros. </p>
+      <p className='description'>¡Lo esperamos!</p>
       <p>Plomería y Gas Necochea ©copyright</p>
-
     </footer>
   
   </div>

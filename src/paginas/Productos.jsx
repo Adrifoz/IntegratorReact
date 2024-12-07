@@ -12,7 +12,7 @@ const [selectedCategory, setSelectedCategory] = useState('');
 
   <>
 
-    <div className="ProductsContainer">
+    <div className="container">
         <h2 className='titleCardProducts'>Artículos de Plomería/Fontanería</h2>
 
             <div id="containerFilter">
@@ -34,16 +34,16 @@ const [selectedCategory, setSelectedCategory] = useState('');
                         <Producto key={prod.id} {...prod} />
                     ))}
                 </div>
-
+                <p className='description'>Todos los productos están sujetos a disponibilidad de stock.</p>
             </div>
        
-            <p className='description'>Todos los productos están sujetos a disponibilidad de stock.</p>
-            <p className='description'>Para más información no dude en entrar en contacto con nosotros.</p>
-            <p className='description'>¡Lo esperamos!</p>
-        
-        <footer>
-        <p>Plomería y Gas Necochea ©copyright</p>
-        </footer>
+           
+      <footer> 
+    
+      <p className='description'>Para más información no dude en entrar en contacto con nosotros. </p>
+      <p className='description'>¡Lo esperamos!</p>
+      <p>Plomería y Gas Necochea ©copyright</p>
+    </footer>
 
     </div>
 

@@ -1,14 +1,14 @@
 
 .contentCart {
-position: fixed;
-  left: 82%;
+  position: fixed;
+  right: 0px;
   top: 0px;
-  width: 16%;
+  width: 17%;
   box-shadow: 5px 4px 20px black;
   background-color: #5394da;
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 0 0 0 5px;
   max-height: 100%;
   overflow-y: auto;
 

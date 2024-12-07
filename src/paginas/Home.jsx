@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CSS/Home.css';
-import FuncionProductos from './FuncionProductos';
+import FuncionProducts from './FuncionProducts';
 import { Link } from "react-router-dom";
 
 
@@ -8,7 +8,7 @@ function Home () {
 
   return (
   <>
-  <div className='homeContainer'>
+  <div className='container'>
 
   <div className='hero'>
 
@@ -30,18 +30,15 @@ function Home () {
       <div className='home'>
           <h3>Artículos recomendados</h3>
           
-          <FuncionProductos />
+          <FuncionProducts />
           <Link className='link' to="Productos">Ir a Productos</Link>
 
-         
       </div>
 
-      <p className='description'>Todos nuestros productos están abalados por la norma ISO 9001</p><p className='description'>La empresa se reserva todos los derechos de este sítio</p>
-
   <footer>
-    
+    <p className='description'>Todos nuestros productos están abalados por la norma ISO 9001</p>
+    <p className='description'>La empresa se reserva todos los derechos de este sítio</p>
     <p>Plomería y Gas Necochea ©copyright</p>
-    
   </footer>
 
 </div>

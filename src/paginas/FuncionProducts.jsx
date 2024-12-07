@@ -2,7 +2,7 @@ import Producto from "./Producto";
 import { productos } from "../productos";
 import "../CSS/Productos.css";
 
-const FuncionProductos = () => {
+const FuncionProducts = () => {
     let prodDest = productos.filter((prod) => prod.destacado == true);
 
     return (
@@ -12,4 +12,4 @@ const FuncionProductos = () => {
     )
 };
 
-export default FuncionProductos;
+export default FuncionProducts;

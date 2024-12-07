@@ -4,7 +4,7 @@ import '../CSS/SignUp.css'
 function SignUp () {
 return ( 
 <>
-<div className='SignUpContainer'>
+<div className='container'>
 
     <h3 className='titleSign'>Bienvenido!</h3>
     <h4> Regístrate aqui:</h4>
@@ -22,9 +22,11 @@ return (
         <button href="#">¿Olvidó su contraseña?</button>
     </div>
 
-<footer>
-    <p>Plomería y Gas Necochea ©copyright</p>
-</footer>
+    <footer>
+      <p className='description'>Para más información no dude en entrar en contacto con nosotros. </p>
+      <p className='description'>¡Lo esperamos!</p>
+      <p>Plomería y Gas Necochea ©copyright</p>
+    </footer>
 
 </div>
 </>
