@@ -34,7 +34,7 @@ function Home () {
       </div>
 
   <footer>
-    <p className='description'>Todos nuestros productos están abalados por la norma ISO 9001</p>
+    <p className='description'>Todos nuestros productos están abalados por la norma ISO 9001.</p>
     <p className='description'>La empresa se reserva todos los derechos de este sítio</p>
     <p>Plomería y Gas Necochea ©copyright</p>
   </footer>

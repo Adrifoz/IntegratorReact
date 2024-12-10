@@ -57,6 +57,10 @@
     gap: 5px;
   }
 
+  .form label {
+    width: 80px;
+  }
+
 
 
   .errorMessage {
@@ -79,19 +83,6 @@
     width: 70vw;
   }
 
-
-footer{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-} 
-
-footer p{
-  color: #2a2727; 
-}
 
 @media (max-width: 530px) {
 

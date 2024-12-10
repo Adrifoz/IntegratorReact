@@ -21,7 +21,7 @@
         display: flex;
         flex-direction: column;
         padding-top: 130px;
-        gap: 60px;
+        gap: 30px;
         padding-right: 20px;
         padding-left: 20px;
         align-items: center;
@@ -35,7 +35,6 @@
             gap: 20px;
             align-items: center;
             max-width: 1200px;
-            margin-bottom: 30px;
             background-color: #cde1f2; /* Fondo celeste claro */
             color: #2a2727; /* Color del texto */
             padding: 35px;
@@ -45,21 +44,103 @@
             box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.1);
         }
 
-            .boxTitle{
-                width: 100%;
-                font-size: large;
-                font-weight: bolder;
-                display: flex;
-                justify-content: center;
-                background-color: #93daf1;
-                box-shadow: 5px 5px 15px;
+    .boxTitle{
+            width: 100%;
+            font-size: large;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            background-color: #a2d5e6;
+            box-shadow: 3px 1px 5px;
+            border-radius: 7px;    
                 
             }
 
-            h1 {
-                font-size: xx-large;
+        h1 {
+            font-size: 27px;
+            }    
+
+        h3 {
+            color: #044280;
+            }    
+
+        label {
+                color: black;
+            }    
+
+        input{
+            width: 180px;
+            }    
+
+        .buttonPassword {
+            width: 180px;
+            }            
+
+        footer {
+            margin-top: 80px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        footer p {
+            color: black;
+        }
+
+        .footerSession {
+            margin-top: 400px;
+        }
+
+            @media (max-width: 767px) {
+                footer{
+                        width: 80%;
+                        text-align: center;
+                        font-size: medium;
+                    }
+
+                .paragraph{
+                    margin: 20px 20px 20px 20px;
+                
+                }
+
+                .boxTitle h1{
+                    font-size: x-large;
+                }
+                
+                .boxTitle h2{
+                    font-size: x-large;
+                }
+                
             }
 
-            h3 {
-                color: #044280;
+            @media (max-width: 660px) {
+           
+
+                .paragraph{
+                    padding-right: 100px;
+                    padding-left: 100px;
+                
+                }
+
+                .boxTitle h1{
+                    font-size: 22px;
+                }
+                
+                .boxTitle h2{
+                    font-size: 22px;
+                }
+               
+            }
+
+            @media (max-width: 540px) {
+           
+
+                .paragraph{
+                    padding-right: 50px;
+                    padding-left: 50px;
+                
+                }
+                
             }

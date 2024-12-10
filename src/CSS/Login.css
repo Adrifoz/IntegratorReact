@@ -19,10 +19,11 @@
 .buttonAndCheck{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 12px;
+    width: 100px;
+    align-items: start
 }
 
-
-footer{
-    margin-top: 400px;
+.check {
+ width: 180px;
 }

@@ -10,20 +10,25 @@ return (
     </div>
     
     <div className='SignUp'>
-        <label htmlFor="username">Nombre de usuario:</label>
-        <input name="username" type="username"/>
-
-        <label htmlFor="password">Contraseña:</label>
-        <input name="password" type="password"/>
-        <label htmlFor="password">Repita su contraseña:</label>
-        <input name="password" type="password"/>
-        <div id="lower">
-            <input type="submit" value="Entrar"/>
+    <div className='sectionSession'>
+            <label htmlFor="username">Nombre de usuario:</label>
+            <input name="username" type="username"/>
         </div>
-        <button href="#">¿Olvidó su contraseña?</button>
+        <div className='sectionSession'>
+            <label htmlFor="password">Contraseña:</label>
+            <input name="password" type="password"/>
+        </div>
+        <div className='sectionSession'>
+            <label htmlFor="password">Repita su contraseña:</label>
+            <input name="password" type="password"/>
+        </div>
+        <div id="lower">
+            <input type="submit" value="Registrarse"/>
+        </div>
+        <button className='buttonPassword' href="#">¿Olvidó su contraseña?</button>
     </div>
 
-    <footer>
+    <footer className='footerSession'>
       <p className='description'>Para más información no dude en entrar en contacto con nosotros. </p>
       <p className='description'>¡Lo esperamos!</p>
       <p>Plomería y Gas Necochea ©copyright</p>

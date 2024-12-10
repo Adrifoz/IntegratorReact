@@ -1,6 +1,3 @@
-
-
-
 .hero{
 display: flex;
 flex-direction: column;
@@ -14,10 +11,11 @@ justify-content: center;
     box-shadow: 15px 9px 15px rgba(0, 0, 0, 0.1);
     background: linear-gradient(135deg, #5e7dc0, #9db1e9,  hsl(217, 90%, 60%), #3c6695);
     border-radius: 2%;
+    padding: 7px;
 }
 
 .cardsContainer {
-    padding-top: 30px;
+    padding-top: 15px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -30,7 +28,9 @@ justify-content: center;
         color: white;
         border-radius: 3px;
         padding-top: 10px;
-        margin-top: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 50px;
         font-size: 16px;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease;
@@ -39,41 +39,14 @@ justify-content: center;
 
 .link:hover {
     background-color: #4833a8; /* Color azul */
-    transform: scale(1.03); /* Aumenta ligeramente el tamaño */
+    transform: scale(0.99); /* Aumenta ligeramente el tamaño */
     border-radius: 3px;
   }
-  footer{
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-}
 
 
 @media (max-width: 767px) {
   
-    .titleHero{ 
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .paragraph{
-        margin: 20px 20px 20px 20px;
-
-    }
-
-    footer{
-            width: 80%;
-            text-align: center;
-            font-size: medium;
-        }
-        .welcome, h1{
-            text-align: center;
-            font-size: larger;
-        }
 
 }
 
