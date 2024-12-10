@@ -9,9 +9,8 @@ function AboutUs () {
 
 <div className='container'>
 
-  <div class="headerContent">
+  <div class="boxTitle">
     <h2>Sobre Nosotros</h2>
-    <p>Conoce nuestra historia y misión</p>
   </div>
 
   <div className='paragraph'>

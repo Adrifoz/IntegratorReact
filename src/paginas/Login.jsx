@@ -5,9 +5,10 @@ function Login () {
 return ( 
 <>
 <div className='container'>
-<h3 className='titleSign'>Bienvenido!</h3>
-
-<h4> Iniciar sesión</h4>
+  <div className='boxTitle'>
+    <h2>Iniciar sesión</h2>
+  </div>
+  
     <div className='login'>
     <label htmlFor="username">Nombre de usuario:</label>
     <input name="username" type="username"/>

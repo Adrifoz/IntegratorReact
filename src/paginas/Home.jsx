@@ -10,22 +10,20 @@ function Home () {
   <>
   <div className='container'>
 
-  <div className='hero'>
-
-  <div className='titleHero'>
-  <p className='welcome'>Bienvenido a su tienda de</p><h1>Promería/ Fontanería</h1>
-  </div>
-
-  <div className='paragraph'>
-    <p>
-    El sistema que distribuye el agua en su casa es uno de los más importantes e indispensables para su bienestar. Una persona consume una media de 136 litros por día.
-    Nuestra especialidad es reparar las perdidas de sus canillas, duchas, lavaderos, tocadores, entre otros. También reparamos los desagües para su óptimo funcionamiento, y así se ahorrará de situaciones desagradables en la comodidad de su casa.
-    <br/><br/>
-    El gas que llega a su casa necesita estar bien manipulado para evitar pérdidas que lo puedan colocar en riesgo a usted y a su familia. Realizamos la conexión de los artefactos que utilizan gas natural o envasado, así como también damos asesoría y soluciones prácticas para su red de gas domiciliaria.</p>
+    <div className='boxTitle'>
+        <h1>Bienvenido a su tienda de Promería/ Fontanería</h1>
     </div>
 
+    <div className='paragraph'>
+      <p>
+      El sistema que distribuye el agua en su casa es uno de los más importantes e indispensables para su bienestar. Una persona consume una media de 136 litros por día.
+      Nuestra especialidad es reparar las perdidas de sus canillas, duchas, lavaderos, tocadores, entre otros. También reparamos los desagües para su óptimo funcionamiento, y así se ahorrará de situaciones desagradables en la comodidad de su casa.
+      <br/><br/>
+      El gas que llega a su casa necesita estar bien manipulado para evitar pérdidas que lo puedan colocar en riesgo a usted y a su familia. Realizamos la conexión de los artefactos que utilizan gas natural o envasado, así como también damos asesoría y soluciones prácticas para su red de gas domiciliaria.</p>
+      </div>
+
     <Link className='link' to="AboutUs">Sabe más sobre nosotros</Link>
-  </div>
+
 
       <div className='home'>
           <h3>Artículos recomendados</h3>

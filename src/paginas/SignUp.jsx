@@ -2,12 +2,13 @@ import React from 'react';
 import '../CSS/SignUp.css'
 
 function SignUp () {
-return ( 
+return (
 <>
 <div className='container'>
-
-    <h3 className='titleSign'>Bienvenido!</h3>
-    <h4> Regístrate aqui:</h4>
+    <div className='boxTitle'>
+        <h2>Registrarse</h2>
+    </div>
+    
     <div className='SignUp'>
         <label htmlFor="username">Nombre de usuario:</label>
         <input name="username" type="username"/>

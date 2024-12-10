@@ -21,10 +21,6 @@
     font-size: xx-large;
 }
 
-h4 {
-    
-    padding-bottom: 10px;
-}
 
 @media (max-width: 767px) {
     .titleSign{

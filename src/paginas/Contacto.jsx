@@ -10,6 +10,10 @@ function Contacto () {
 return ( 
 <>
 <div className='container'>
+  <div className='boxTitle'>
+      <h2>Contacto</h2>
+  </div>
+
   <div className='paragraph'>
       <h3>
         Escríbenos!

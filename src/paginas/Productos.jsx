@@ -13,8 +13,9 @@ const [selectedCategory, setSelectedCategory] = useState('');
   <>
 
     <div className="container">
-        <h2 className='titleCardProducts'>Artículos de Plomería/Fontanería</h2>
-
+        <div className='boxTitle'>
+            <h2 className='titleCardProducts'>Artículos de Plomería/Fontanería</h2>
+        </div>
             <div id="containerFilter">
                 <div className="filter">
                     <p>Filtrar:</p>

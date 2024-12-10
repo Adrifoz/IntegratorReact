@@ -9,10 +9,8 @@ justify-content: center;
 }
 
 .home {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    
     box-shadow: 15px 9px 15px rgba(0, 0, 0, 0.1);
     background: linear-gradient(135deg, #5e7dc0, #9db1e9,  hsl(217, 90%, 60%), #3c6695);
     border-radius: 2%;
@@ -24,31 +22,6 @@ justify-content: center;
     justify-content: center;
     flex-direction: row;
     gap: 10px;
-}
-
-.titleHero{
-    display: flex;
-    justify-content: center;
-    color: #2a2727;
-}
-
-.welcome{
-    font-size: xx-large;
-    font-weight: bolder;
-
-    
-}
-
-h1 {
-    padding-left: 10px;
-    padding-bottom: 30px;
-    text-align: center;
-
-}
-h3 {
-    display: flex;
-    justify-content: center;
-    color: #044280;
 }
 
 

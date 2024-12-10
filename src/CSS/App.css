@@ -29,8 +29,7 @@
         justify-content: center;
         }
 
-        .paragraph{
-
+        .paragraph {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -44,6 +43,23 @@
             padding-left: 150px;
             border-radius: 7px;
             box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .boxTitle{
+                width: 100%;
+                font-size: large;
+                font-weight: bolder;
+                display: flex;
+                justify-content: center;
+                background-color: #93daf1;
+                box-shadow: 5px 5px 15px;
+                
             }
 
-            
+            h1 {
+                font-size: xx-large;
+            }
+
+            h3 {
+                color: #044280;
+            }
