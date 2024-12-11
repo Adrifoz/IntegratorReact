@@ -1,0 +1,255 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        line-height: 1.6;
+        background: linear-gradient(135deg, #f9f9f9, #89a3dd, hsl(217, 90%, 60%), #7b7fc7);
+        box-sizing: border-box;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 130px;
+        gap: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        align-items: center;
+        color: #2a2727;
+        justify-content: center;
+        width: 100%;
+        }
+
+        .paragraph {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            max-width: 1200px;
+            background-color: #cde1f2; /* Fondo celeste claro */
+            color: #2a2727; /* Color del texto */
+            padding: 35px;
+            padding-right: 150px;
+            padding-left: 150px;
+            border-radius: 7px;
+            box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    .boxTitle{
+            width: 100%;
+            font-size: large;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            background-color: #a2d5e6;
+            box-shadow: 3px 1px 5px;
+            border-radius: 7px;    
+                
+            }
+
+        h1 {
+            font-size: 27px;
+            }    
+
+        h3 {
+            color: #044280;
+            }    
+
+        label {
+                color: black;
+            }    
+
+        input{
+            width: 180px;
+            }
+            
+        .containerSessions {
+            display: flex;
+            width: 180px;
+            height: 18px;
+            gap: 30px;
+            flex-direction: column;
+        }
+
+        .buttonPassword {
+            width: 180px;
+            }            
+
+        footer {
+            margin-top: 80px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        footer p {
+            color: black;
+            text-align: center;
+        }
+
+        .footerSession {
+            margin-top: 400px;
+        }
+
+        @media (max-width: 940px) {
+       
+            .description{
+               padding: 20px;
+            }
+          
+       }
+
+            @media (max-width: 767px) {
+                footer{
+                        width: 80%;
+                        text-align: center;
+                        font-size: medium;
+                    }
+
+                .paragraph{
+                    margin: 20px 20px 20px 20px;
+                
+                }
+
+                .boxTitle h1{
+                    font-size: x-large;
+                }
+                
+                .boxTitle h2{
+                    font-size: x-large;
+                }
+
+                input {
+                    width: 120px;
+                }
+
+                .buttonPassword {
+                    width: 120px;
+                    }   
+                
+                label {
+                    font-size: small;
+                }
+                .containerSessions {
+                    width: 120px;
+                }
+                
+            }
+
+            @media (max-width: 660px) {
+           
+
+                .paragraph{
+                    padding-right: 100px;
+                    padding-left: 100px;
+                    margin: 0px 0px 0px 0px;
+                
+                }
+
+                .boxTitle h1{
+                    font-size: 22px;
+                }
+                
+                .boxTitle h2{
+                    font-size: 22px;
+                }
+
+                footer p {
+                    font-size: small;
+                }
+               
+            }
+
+            @media (max-width: 560px) {
+           
+
+                .paragraph{
+                    padding-right: 50px;
+                    padding-left: 50px;
+                
+                }
+                .boxTitle h1{
+                    font-size: 20px;
+                }
+                
+                .boxTitle h2{
+                    font-size: 20px;
+                }
+
+                .container {
+                    padding-right: 5px;
+                    padding-left: 5px;
+
+                    }
+                
+            }
+
+            @media (max-width: 470px) {
+
+                .boxTitle h1{
+                    font-size: 16px;
+                    text-align: center;
+                }
+                
+                .boxTitle h2{
+                    font-size: 16px;
+                    	text-align: center;
+                }
+                .paragraph{
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    font-size: small;
+                
+                }
+
+                .container {
+                    padding-right: 3px;
+                    padding-left: 3px;
+                    } 
+            }
+
+            @media (max-width: 360px) {
+            input {
+                width: 100px;
+            }
+
+            .buttonPassword {
+                width: 100px;
+                }   
+
+            .containerSessions {
+                width: 100px;
+q
+            }
+        }
+
+            @media (max-width: 300px) {
+           
+
+                .boxTitle h2{
+                    font-size: medium;
+                }
+
+                .boxTitle h1{
+                    font-size: medium;
+                }
+
+                .paragraph{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    width: 95%;
+                }
+                
+            }
