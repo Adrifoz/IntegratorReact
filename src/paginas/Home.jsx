@@ -22,14 +22,14 @@ function Home () {
       El gas que llega a su casa necesita estar bien manipulado para evitar pérdidas que lo puedan colocar en riesgo a usted y a su familia. Realizamos la conexión de los artefactos que utilizan gas natural o envasado, así como también damos asesoría y soluciones prácticas para su red de gas domiciliaria.</p>
       </div>
 
-    <Link className='link' to="AboutUs">Sabe más sobre nosotros</Link>
+    <Link className='link' id='linkAboutUs' to="AboutUs">Sabe más sobre nosotros</Link>
 
 
       <div className='home'>
           <h3>Artículos recomendados</h3>
           
           <FuncionProducts />
-          <Link className='link' to="Productos">Ir a Productos</Link>
+          <Link className='link' id='linkProducts' to="Productos">Ir a Productos</Link>
 
       </div>
 

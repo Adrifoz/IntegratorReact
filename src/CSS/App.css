@@ -27,6 +27,7 @@
         align-items: center;
         color: #2a2727;
         justify-content: center;
+        width: 100%;
         }
 
         .paragraph {
@@ -70,7 +71,15 @@
 
         input{
             width: 180px;
-            }    
+            }
+            
+        .containerSessions {
+            display: flex;
+            width: 180px;
+            height: 18px;
+            gap: 30px;
+            flex-direction: column;
+        }
 
         .buttonPassword {
             width: 180px;
@@ -87,11 +96,20 @@
 
         footer p {
             color: black;
+            text-align: center;
         }
 
         .footerSession {
             margin-top: 400px;
         }
+
+        @media (max-width: 940px) {
+       
+            .description{
+               padding: 20px;
+            }
+          
+       }
 
             @media (max-width: 767px) {
                 footer{
@@ -112,6 +130,21 @@
                 .boxTitle h2{
                     font-size: x-large;
                 }
+
+                input {
+                    width: 120px;
+                }
+
+                .buttonPassword {
+                    width: 120px;
+                    }   
+                
+                label {
+                    font-size: small;
+                }
+                .containerSessions {
+                    width: 120px;
+                }
                 
             }
 
@@ -121,6 +154,7 @@
                 .paragraph{
                     padding-right: 100px;
                     padding-left: 100px;
+                    margin: 0px 0px 0px 0px;
                 
                 }
 
@@ -131,16 +165,90 @@
                 .boxTitle h2{
                     font-size: 22px;
                 }
+
+                footer p {
+                    font-size: small;
+                }
                
             }
 
-            @media (max-width: 540px) {
+            @media (max-width: 560px) {
            
 
                 .paragraph{
                     padding-right: 50px;
                     padding-left: 50px;
                 
+                }
+                .boxTitle h1{
+                    font-size: 20px;
+                }
+                
+                .boxTitle h2{
+                    font-size: 20px;
+                }
+
+                .container {
+                    padding-right: 5px;
+                    padding-left: 5px;
+
+                    }
+                
+            }
+
+            @media (max-width: 470px) {
+
+                .boxTitle h1{
+                    font-size: 16px;
+                    text-align: center;
+                }
+                
+                .boxTitle h2{
+                    font-size: 16px;
+                    	text-align: center;
+                }
+                .paragraph{
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    font-size: small;
+                
+                }
+
+                .container {
+                    padding-right: 3px;
+                    padding-left: 3px;
+                    } 
+            }
+
+            @media (max-width: 360px) {
+            input {
+                width: 100px;
+            }
+
+            .buttonPassword {
+                width: 100px;
+                }   
+
+            .containerSessions {
+                width: 100px;
+            }
+        }
+
+            @media (max-width: 300px) {
+           
+
+                .boxTitle h2{
+                    font-size: medium;
+                }
+
+                .boxTitle h1{
+                    font-size: medium;
+                }
+
+                .paragraph{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    width: 95%;
                 }
                 
             }

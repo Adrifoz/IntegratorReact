@@ -12,6 +12,11 @@ justify-content: center;
     background: linear-gradient(135deg, #5e7dc0, #9db1e9,  hsl(217, 90%, 60%), #3c6695);
     border-radius: 2%;
     padding: 7px;
+    margin-top: 40px;
+}
+
+#linkProducts {
+    margin-top: 50px;
 }
 
 .cardsContainer {
@@ -30,7 +35,6 @@ justify-content: center;
         padding-top: 10px;
         padding-left: 5px;
         padding-right: 5px;
-        margin-top: 50px;
         font-size: 16px;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease;
@@ -44,11 +48,29 @@ justify-content: center;
   }
 
 
-@media (max-width: 767px) {
-  
+@media (max-width: 660px) {
 
-
+.home {
+    transform: scale(0.9);
 }
+
+#linkAboutUs{
+    transform: scale(0.9);
+}
+}
+
+
+@media (max-width: 450px) {
+
+    .home {
+        transform: scale(0.8);
+    }
+    #linkAboutUs{
+        transform: scale(0.8);
+    }
+    
+}
+
 
 @media (max-width: 392px) {
 
@@ -79,6 +101,10 @@ justify-content: center;
         transform: scale(0.7);
     }
 
+    #linkAboutUs{
+        transform: scale(0.7);
+    }
+
     .link{
         display: flex;
        height: 50px;
@@ -92,5 +118,10 @@ justify-content: center;
     .home{
         transform: scale(0.55);
     }
+    #linkAboutUs{
+        transform: scale(0.55);
+    }
 }
+
+
 

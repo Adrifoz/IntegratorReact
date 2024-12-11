@@ -1,5 +1,4 @@
 import React from 'react';
-import '../CSS/SignUp.css'
 
 function SignUp () {
 return (
@@ -9,7 +8,7 @@ return (
         <h2>Registrarse</h2>
     </div>
     
-    <div className='SignUp'>
+    <div className='containerSessions'>
     <div className='sectionSession'>
             <label htmlFor="username">Nombre de usuario:</label>
             <input name="username" type="username"/>
@@ -25,7 +24,7 @@ return (
         <div id="lower">
             <input type="submit" value="Registrarse"/>
         </div>
-        <button className='buttonPassword' href="#">¿Olvidó su contraseña?</button>
+        
     </div>
 
     <footer className='footerSession'>

@@ -3,7 +3,6 @@
     left: 0px;
     display: flex;
     flex-direction: row;
-    gap: 15px;
     align-items: center;
     box-shadow: 0 5px 24px black;
     background-color: rgb(61, 61, 141);
@@ -57,7 +56,22 @@
         background-color: black; 
 }    
 
+@media (max-width: 1050px) {
+    #NavContainer{
+        justify-content: start;
+        padding-left: 30px;
+    }
+    }
 
+@media (max-width: 900px) {
+    .nav-links li { 
+        margin: 0 8px;
+    }
+
+    .navLink {
+        font-size: 17px;
+    }
+    }
 
 @media (max-width: 810px) {
 

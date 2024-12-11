@@ -1,5 +1,4 @@
 import React from 'react';
-import '../CSS/Login.css'
 
 function Login () {
 return ( 
@@ -9,7 +8,7 @@ return (
     <h2>Iniciar sesión</h2>
   </div>
   
-    <div className='login'>
+    <div className='containerSessions'>
     <div className='sectionSession'>
       <label htmlFor="username">Nombre de usuario:</label>
       <input name="username" type="username"/>
