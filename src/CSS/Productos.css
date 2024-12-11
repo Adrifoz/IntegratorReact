@@ -21,10 +21,10 @@
 }
 
 #containerFilter{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     
     padding-right: 50px;
     
@@ -35,9 +35,8 @@
     display: flex;
     flex-direction: column;
     font-size: small;
-    gap: 5px;
     align-items: start;
-border-radius: 10px;
+border-radius: 5px;
 background-color: rgb(61, 61, 141);
     padding: 5px;
 }
@@ -46,10 +45,14 @@ background-color: rgb(61, 61, 141);
     color: #a5a7c9;
 }
 
+select {
+    border-radius: 5px;
+}
+
 .Products {
     display: flex;
-    gap: 30px;
-    padding-bottom: 70px;
+    gap: 20px;
+    padding-bottom: 50px;
     justify-content: center;
 }
 
@@ -66,7 +69,7 @@ background-color: rgb(61, 61, 141);
 .Card:hover {
  
         background-color: #b6c5d4;
-        transform: scale(1.05);
+        transform: scale(0.95);
       & img{
         border: solid #a5a7c9;
       }
@@ -116,6 +119,7 @@ img {
     background-color: #00bfff;
     color: white;
     border: none;
+    border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -126,47 +130,42 @@ img {
   .Card button:hover {
     background-color: #b2cd8b; 
     transform: scale(1.03);
-    border-radius: 2px;
   }
 
-  
-footer, .description {
-    padding-bottom: 20px; 
-    font-weight: 600;
-  }
 
   @media (max-width: 940px) {
 
 
-     .Products{
-    
-        transform: scale(0.85);
-        width: 100%;
-align-items: center;
-        
-        
-     }
-
-     .description{
-        padding: 20px;
-     }
-   
+    .Products {
+        transform: scale(0.70);
+    }
+    .ProductsContainer{
+        width: 80%;
+    }
 }
 
 @media (max-width: 767px) {
 
-    .Products{
-        transform: scale(0.65);
-     }
+    
 
 }
 
 
-@media (max-width: 560px) {
+@media (max-width: 620px) {
     .Products{
     
         transform: scale(0.55);
      }
+
+     #containerFilter{
+        transform: scale(0.8);
+        left: 20px;
+     }
+
+     .filter{
+       margin-bottom: -30px;
+       margin-top: 20px;
+    }
 }
 
 
@@ -176,16 +175,20 @@ align-items: center;
    .Products{
         transform: scale(0.8);
         flex-wrap: wrap;
-            
-     
-
+        gap: 35px;
+        padding-bottom: 0px;
     }
     .Card{
         margin-bottom: 30px ;
     }                
     
+    .sectionProducts{
+        gap: 0px;    
+    }
+
     .description{
         text-align: center;
+        margin-top: -30px;
     }
        
     
@@ -194,13 +197,21 @@ align-items: center;
 @media (max-width: 450px) {
     #containerFilter{
         align-items: flex-start;
-        padding-left: 40px;
+        left: 10px;
+     }
+     .Products {
+        margin-top: -60px;
      }
 }
 
 @media (max-width: 270px) {
     #containerFilter{
     align-items: center;
-padding: 0px;
+    
      }
+
+    .filter {
+        transform: scale(0.90);
+    }
+    
 }

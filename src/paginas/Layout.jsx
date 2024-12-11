@@ -2,9 +2,7 @@
 import { Outlet, Link } from 'react-router-dom';
 import Cart from './Cart';
 import States from './StatesControls';
-import '../CSS/Layout.css';
-
-
+import '../CSS/Layout.css'
 
 
 function Layout() {
@@ -35,11 +33,6 @@ const  { cartOpen, isMenuOpen, toggleCart, handleMenuToggle } = States();
                         <li>
                             <Link className='navLink' to='Contacto' onClick={handleMenuToggle}>Contacto</Link>
                         </li>
-                        <li>
-                            <Link className='navLink' onClick={toggleCart}>Carrito</Link>
-                            {cartOpen && <Cart />}
-                        
-                        </li>
                         
                         <div className='Login'>
                             <li>
@@ -49,6 +42,11 @@ const  { cartOpen, isMenuOpen, toggleCart, handleMenuToggle } = States();
                                 <Link className='navLink' to='SignUp' onClick={handleMenuToggle}>Registrarse</Link>
                             </li>
                         </div>
+                        <li>
+                            <Link className='navLink' id='buttonCartNav' onClick={toggleCart}>Carrito</Link>
+                            {cartOpen && <Cart />}
+                        
+                        </li>
                     </ul>
                 </ul>
             </nav>

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../CSS/AboutUs.css'
 
 function AboutUs () {
   const URL = 'https://i.pinimg.com/550x/7e/e6/f6/7ee6f6d7043c1b2e34726d4f71976747.jpg';
@@ -7,16 +6,15 @@ function AboutUs () {
   return ( 
 <>
 
-<div className='usContainer'>
+<div className='container'>
 
-  <div class="headerContent">
+  <div class="boxTitle">
     <h2>Sobre Nosotros</h2>
-    <p>Conocé nuestra historia y misión</p>
   </div>
 
-  <div className='us'>
+  <div className='paragraph'>
     <p>
-      ¿Querés saber sobre nosotros?
+      ¿Quieres saber sobre nosotros?
     </p>
     <p>
     Esta empresa inició su actividad en el 2000 dedicándose a la fabricación de radiadores de hierro fundido para la calefacción doméstica en su factoría de Gavà (Barcelona). Tras los primeros radiadores de hierro fundido, complementó su catálogo con la producción de calderas y en 2001 entró definitivamente en el cuarto de baño iniciando la fabricación de bañeras.
@@ -40,12 +38,10 @@ Espacios para interactuar con la cultura del agua de la empresa, sus productos y
         <img src={URL} alt={"Caricatura de plomero"}/>
   </div>
 
-  <p className='description'>Para más información no dude en entrar en contacto con nosotros</p>
-  <p className='description'>¡Lo esperamos!</p>
-
   <footer>
-    
-    <p>Plomería y Gas Necochea ©copyright</p>
+      <p className='description'>Para más información no dude en entrar en contacto con nosotros. </p>
+      <p className='description'>¡Lo esperamos!</p>
+      <p>Plomería y Gas Necochea ©copyright</p>
   </footer>
 
   </div>

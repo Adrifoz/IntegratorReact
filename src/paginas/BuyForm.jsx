@@ -50,8 +50,9 @@ const BuyForm = () => {
             <p className='description'>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
         
       <footer>
-      <p>Plomería y Gas Necochea ©copyright</p>
+        <p>Plomería y Gas Necochea ©copyright</p>
       </footer>
+      
       </div>
       </>          
   );

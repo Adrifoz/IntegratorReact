@@ -12,6 +12,7 @@ import Contacto from "./paginas/Contacto";
 import Congrulations from "./paginas/Congrulations";
 import BuyForm from "./paginas/BuyForm";
 import BuyConfirm from "./paginas/BuyConfirm";
+import './CSS/App.css';
 
 
 function App() {
@@ -26,13 +27,13 @@ function App() {
                 <Route path='Contacto' element={<Contacto/>} />
                 <Route path='Login' element={<Login/>} />
                 <Route path='SignUp' element={<SignUp/>} />
-                <Route path='*' element={<NoPage/>} />
 
                 <Route path="Cart" element={<Cart />} /> 
 
                 <Route path="/BuyForm" element={<BuyForm/>}/>
                 <Route path="/BuyConfirm" element={<BuyConfirm/>}/>
                 <Route path="/Congrulations" element={<Congrulations/>}/>
+                <Route path='*' element={<NoPage/>} />
             </Route>
         </Routes>
     </BrowserRouter>

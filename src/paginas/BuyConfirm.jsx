@@ -41,6 +41,11 @@ return (
             <Link className='buttonCart' to='/' onClick={() => dispatch(reset())} >Cancelar</Link>
             <Link className='buttonCart' id='linkBuy' onClick={resetAndToggles} to="/Congrulations" >Confirmar</Link>
         </div>
+
+        <footer>
+            <p>Plomería y Gas Necochea ©copyright</p>
+        </footer>
+
     </div>
     </>
 );  

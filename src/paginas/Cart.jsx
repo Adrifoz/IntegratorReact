@@ -38,7 +38,7 @@ const  { toggles } = States();
               ))}
             </div>
             <p className='totalCart'>Total: ${total}</p>
-            <p className='totalProd'>Cantidad de productos: {quantity}</p>
+            <p className='totalProd'>Productos: {quantity}</p>
             
             <div className='buttonsCart'>
               <button className='buttonCart' onClick={() => dispatch(reset())}>Limpiar</button>

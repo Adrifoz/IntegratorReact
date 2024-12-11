@@ -1,16 +1,3 @@
-
-.homeContainer {
-display: flex;
-flex-direction: column;
-padding-top: 130px;
-gap: 60px;
-padding-right: 20px;
-padding-left: 20px;
-align-items: center;
-color: #2a2727;
-justify-content: center;
-}
-
 .hero{
 display: flex;
 flex-direction: column;
@@ -19,59 +6,26 @@ justify-content: center;
 }
 
 .home {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    max-width: 800px;
     box-shadow: 15px 9px 15px rgba(0, 0, 0, 0.1);
     background: linear-gradient(135deg, #5e7dc0, #9db1e9,  hsl(217, 90%, 60%), #3c6695);
     border-radius: 2%;
+    padding: 7px;
+    margin-top: 40px;
+}
+
+#linkProducts {
+    margin-top: 50px;
 }
 
 .cardsContainer {
-    padding-top: 30px;
+    padding-top: 15px;
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 10px;
 }
-
-.titleHero{
-    display: flex;
-    justify-content: center;
-    color: #2a2727;
-}
-
-.welcome{
-    font-size: xx-large;
-    font-weight: bolder;
-
-    
-}
-
-h1 {
-    padding-left: 10px;
-    padding-bottom: 30px;
-    text-align: center;
-
-}
-h3 {
-    display: flex;
-    justify-content: center;
-    color: #044280;
-}
-
-.paragraph{
-    margin-bottom: 30px;
-    background-color: #cde1f2; /* Fondo celeste claro */
-    color: #2a2727; /* Color del texto */
-    padding: 35px;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-}
-
 
 
 .link{
@@ -79,7 +33,8 @@ h3 {
         color: white;
         border-radius: 3px;
         padding-top: 10px;
-        margin-top: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
         font-size: 16px;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease;
@@ -88,43 +43,34 @@ h3 {
 
 .link:hover {
     background-color: #4833a8; /* Color azul */
-    transform: scale(1.03); /* Aumenta ligeramente el tamaño */
+    transform: scale(0.99); /* Aumenta ligeramente el tamaño */
     border-radius: 3px;
   }
-  footer{
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
+
+
+@media (max-width: 660px) {
+
+.home {
+    transform: scale(0.9);
+}
+
+#linkAboutUs{
+    transform: scale(0.9);
+}
 }
 
 
-@media (max-width: 767px) {
-  
-    .titleHero{ 
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 450px) {
+
+    .home {
+        transform: scale(0.8);
     }
-
-    .paragraph{
-        margin: 20px 20px 20px 20px;
-
+    #linkAboutUs{
+        transform: scale(0.8);
     }
-
-    footer{
-            width: 80%;
-            text-align: center;
-            font-size: medium;
-        }
-        .welcome, h1{
-            text-align: center;
-            font-size: larger;
-        }
-
+    
 }
+
 
 @media (max-width: 392px) {
 
@@ -155,15 +101,15 @@ h3 {
         transform: scale(0.7);
     }
 
+    #linkAboutUs{
+        transform: scale(0.7);
+    }
+
     .link{
         display: flex;
        height: 50px;
        justify-content: center;
        align-items: center;
-    }
-    footer{
-
-        font-size: small;
     }
 
 }
@@ -172,5 +118,10 @@ h3 {
     .home{
         transform: scale(0.55);
     }
+    #linkAboutUs{
+        transform: scale(0.55);
+    }
 }
+
+
 
