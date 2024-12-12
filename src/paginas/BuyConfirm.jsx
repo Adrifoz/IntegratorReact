@@ -42,7 +42,7 @@ return (
             <Link className='buttonCart' id='linkBuy' onClick={resetAndToggles} to="/Congrulations" >Confirmar</Link>
         </div>
 
-        <footer className='footerBuyAndConfirm'>
+        <footer className='footerBuyAndConfirm' id='footerBuyConfirm'>
             <p className='description'>Garantía en todos los productos.</p>
             <p>Plomería y Gas Necochea ©copyright</p>
         </footer>

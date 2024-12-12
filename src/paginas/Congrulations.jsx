@@ -13,7 +13,7 @@ const Congrulations = () => {
       <Link to="/Productos" className="linkContinue">Seguir Comprando</Link>
     </div>
     
-      <footer>
+    <footer className='footerBuyAndConfirm'>
         <p className='description'>Para más información no dude en entrar en contacto con nosotros</p>
         <p className='description'> ¡Lo esperamos!</p>
       <p>Plomería y Gas Necochea ©copyright</p>

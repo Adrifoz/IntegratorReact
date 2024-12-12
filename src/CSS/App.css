@@ -132,7 +132,10 @@
           
         @media (max-width: 940px) {
        
-            
+            .footerBuyAndConfirm{
+                position: relative;
+                bottom: 10px;
+            }
           
        }
 
@@ -179,16 +182,6 @@
                     gap:0px;
                 }
 
-                /* footer p {
-                    padding: -5px;
-                    margin: -5px;
-                } */
-
-                .footerBuyAndConfirm{
-                    position: relative;
-                    bottom: 10px;
-                    
-                }
             }
 
             @media (max-width: 660px) {

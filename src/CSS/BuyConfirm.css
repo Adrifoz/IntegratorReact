@@ -28,11 +28,8 @@ background: linear-gradient(135deg, #6982c8, #a2bbef, hsl(217, 90%, 60%), #93c5f
         color:rgb(28, 32, 86);
     }
 
-    .footerConfirm {
-        height: 100px;
-        display: flex;
-        justify-content: end;
-        padding-bottom: 10px;
+    #footerBuyConfirm{
+        position: relative;
     }
 
 @media (max-width: 767px) {
