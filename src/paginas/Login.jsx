@@ -25,7 +25,7 @@ return (
     <button className='buttonPassword' href="#">¿Olvidó su contraseña?</button>
   </div>
 
-    <footer className='footerSession'>
+    <footer className='footerSessions'>
       <p className='description'>Para más información no dude en entrar en contacto con nosotros. </p>
       <p className='description'>¡Lo esperamos!</p>
       <p>Plomería y Gas Necochea ©copyright</p>

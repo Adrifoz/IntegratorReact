@@ -17,7 +17,7 @@ return (
             <label htmlFor="password">Contraseña:</label>
             <input name="password" type="password"/>
         </div>
-        <div className='sectionSession'>
+        <div className='sectionSessions'>
             <label htmlFor="password">Repita su contraseña:</label>
             <input name="password" type="password"/>
         </div>
@@ -27,7 +27,7 @@ return (
         
     </div>
 
-    <footer className='footerSession'>
+    <footer className='footerSessions'>
       <p className='description'>Para más información no dude en entrar en contacto con nosotros. </p>
       <p className='description'>¡Lo esperamos!</p>
       <p>Plomería y Gas Necochea ©copyright</p>
