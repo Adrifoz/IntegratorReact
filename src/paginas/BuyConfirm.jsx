@@ -18,7 +18,7 @@ const { resetAndToggles } = States();
 
 return ( 
     <>
-    <div className="contentConfirm">
+    <div className="container">
         <h3 className='titleConfirm'>Lista de productos:</h3>
 
 
@@ -42,7 +42,8 @@ return (
             <Link className='buttonCart' id='linkBuy' onClick={resetAndToggles} to="/Congrulations" >Confirmar</Link>
         </div>
 
-        <footer>
+        <footer className='footerBuyAndConfirm'>
+            <p className='description'>Garantía en todos los productos.</p>
             <p>Plomería y Gas Necochea ©copyright</p>
         </footer>
 

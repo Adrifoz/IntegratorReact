@@ -35,9 +35,9 @@
             flex-direction: column;
             gap: 20px;
             align-items: center;
-            max-width: 1200px;
             background-color: #cde1f2; /* Fondo celeste claro */
             color: #2a2727; /* Color del texto */
+            width: 90%;
             padding: 35px;
             padding-right: 150px;
             padding-left: 150px;
@@ -57,8 +57,14 @@
                 
             }
 
-        h1 {
-            font-size: 27px;
+        .boxTitle h1 {
+            font-size: x-large;
+            color: #044280;
+            } 
+
+        .boxTitle h2 {
+            font-size: x-large;
+            color: #044280;
             }    
 
         h3 {
@@ -70,19 +76,30 @@
             }    
 
         input{
-            width: 180px;
+            width: 250px;
             }
             
         .containerSessions {
             display: flex;
-            width: 180px;
+            padding-top: 50px;
+            width: 250px;
             height: 18px;
             gap: 30px;
             flex-direction: column;
         }
 
         .buttonPassword {
-            width: 180px;
+            width: 250px;
+            }
+
+        #error-Message {
+            color: rgb(163, 21, 21);       
+            font-size: medium;   
+            margin-top: 5px;    
+        }
+
+        .successMessage{
+            padding-top: 15px;
             }            
 
         footer {
@@ -99,15 +116,23 @@
             text-align: center;
         }
 
-        .footerSession {
-            margin-top: 400px;
+        .footerSessions {
+            margin-top: 350px;
         }
 
-        @media (max-width: 940px) {
+        .footerBuyAndConfirm{
+            position: absolute;
+            bottom: 10px;
+            
+        }
        
             .description{
                padding: 20px;
             }
+          
+        @media (max-width: 940px) {
+       
+            
           
        }
 
@@ -146,6 +171,24 @@
                     width: 120px;
                 }
                 
+                #error-Message {        
+                    font-size: small; 
+                }
+                
+                footer {
+                    gap:0px;
+                }
+
+                /* footer p {
+                    padding: -5px;
+                    margin: -5px;
+                } */
+
+                .footerBuyAndConfirm{
+                    position: relative;
+                    bottom: 10px;
+                    
+                }
             }
 
             @media (max-width: 660px) {
@@ -231,6 +274,10 @@
 
             .containerSessions {
                 width: 100px;
+            }
+
+            .container {
+                gap: 10px
             }
         }
 

@@ -194,15 +194,17 @@ img {
     
 }
 
-@media (max-width: 450px) {
+@media (max-width: 440px) {
     #containerFilter{
         align-items: flex-start;
         left: 10px;
      }
      .Products {
-        margin-top: -60px;
+        margin-top: -20px;
      }
 }
+
+
 
 @media (max-width: 270px) {
     #containerFilter{

@@ -1,15 +1,4 @@
-
-.usContainer {
-    padding-top: 17vh;
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
   .CardSuccessContent{
-    
     display: flex;
     flex-direction: column;
     max-width: 800px;
@@ -18,35 +7,18 @@
     height: 15%;
     padding: 15px;
     box-shadow: 15px 9px 15px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(135deg, #48b778, #63e174, #37c54a, #178a43);
+    background: linear-gradient(135deg, #1e8b4d, #5babab, #9dc0a2, #1c6c3a);
     border-radius: 2%;
-    gap: 15px;
+    gap: 20px;
     color: #050425;
     text-align: center;
   }
-
-.us {
-  background-color: #cde1f2; 
-  color: #2a2727; 
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 800px;
-  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-}
-
-.us, p, h2, h1 {
-  line-height: 1.6;
-  text-align: justify;
-  color: #15187b;
-
-}
 
 .CardSuccessContent h3 {
   font-size: 28px;
 }
 
-.linkSucess{
+.linkContinue{
     background-color: #2f829e; 
     color: white;
     border-radius: 7px;
@@ -58,10 +30,14 @@
     text-decoration: none;
 }
 
-.linkSucess:hover {
+.linkContinue:hover {
     background-color: #4833a8; 
     transform: scale(1.10); 
     border-radius: 5px;
+  }
+
+  .congrulationsMessage{
+    color: #558030;
   }
 
 
@@ -84,5 +60,13 @@
   .CardSuccessContent h3 {
     font-size: 20px;
   }
+
+}
+
+@media (max-width: 630px) {
+
+.CardSuccessContent{
+  width: 95%;
+}
 
 }

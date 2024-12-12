@@ -9,7 +9,7 @@ const BuyForm = () => {
 
     return (
       <>
-      <div className="ProductsContainer">
+      <div className="container">
         <h2>Iniciar Sesión</h2>
         <Formik
           initialValues={{ email: '', password: '' }}
@@ -31,12 +31,12 @@ const BuyForm = () => {
               <div className="form-group">
                 <label htmlFor="email">Email:</label>
                 <Field name="email" type="email" className="field" />
-                <ErrorMessage name="email" component="div" className="error-message" />
+                <ErrorMessage name="email" component="div" id="error-Message" />
               </div>
               <div className="form-group">
                 <label htmlFor="password">Contraseña:</label>
                 <Field name="password" type="password" className="field" />
-                <ErrorMessage name="password" component="div" className="error-message" />
+                <ErrorMessage name="password" component="div" id="error-Message" />
               </div>
               <button type="submit" disabled={isSubmitting}>
                 Iniciar Sesión
@@ -45,11 +45,8 @@ const BuyForm = () => {
           )}
           </Formik>
         
-         
-          <p className='description'>Todos los productos están sujetos a disponibilidad de stock.</p>
+      <footer className='footerBuyAndConfirm'>
             <p className='description'>Para más información no dude en entrar en contacto con nosotros ¡Lo esperamos!</p>
-        
-      <footer>
         <p>Plomería y Gas Necochea ©copyright</p>
       </footer>
       
