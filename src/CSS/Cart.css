@@ -14,6 +14,11 @@
 
 }
 
+.cart p{
+  display: flex;
+  text-align: center;
+}
+
 .titleCart{
   padding: 6px;
   font-size: medium;
@@ -37,15 +42,15 @@ font-weight: 600;
     border: outset 2px rgb(78, 76, 155);
     border-radius: 6px;
     padding: 1px;
-    background-color: rgb(61, 61, 141);
+    background-color: rgb(29, 29, 92);
     font-size: small;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
   }
 
   .cardProduct:hover {
-    background-color: #271963; /* Color azul */
+    background-color: rgb(61, 61, 141); /* Color azul */
     border-radius: 6px;
-    transform: scale(0.99); /* Aumenta ligeramente el tamaño */
+    transform: scale(0.98); /* Aumenta ligeramente el tamaño */
     position: relative;
     
   }
@@ -75,7 +80,7 @@ font-weight: 600;
 }
 
  .buttonCart{
-  background-color: #0d0640; 
+  background-color: rgb(7, 2, 32); 
   color: rgb(205, 203, 211);
   border: none;
   text-decoration: none;
